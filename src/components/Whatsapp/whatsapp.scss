@@ -1,0 +1,35 @@
+.whatsapp_cta{
+width : 20vw;
+border: 2px solid #00bb2d;
+height: 11vw;
+border-radius: 2vw;
+display:flex;
+align-items: center;
+color:#8ef0a5;
+padding:10px;   
+font-family:"Montserrat";
+z-index:4001;
+
+}
+.whatsapp_container{ 
+    display:flex;
+    flex-flow:row nowrap;
+    width:50vw;
+    height: 11vw;
+    z-index: 4000;
+    align-items: center;
+    &:hover{
+        .whatsapp_cta{
+
+        background-color:  #00bb2d;
+        color:rgb(255, 255, 255);
+    }
+}   
+}
+.whatsapp_fixed{
+    width:50vw;
+    z-index: 500;
+    position:fixed;
+    top:80px;
+    
+}

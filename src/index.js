@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import VooduploCont from "./components/Vooduplo/Vooduplo";
 import Faq from "./components/Faq/Faq";
 import Curso from "./components/Curso/Curso";
+import WhatsappContainer from './components/Whatsapp/Whatsapp'
 
 import Reservar from "./components/Reservar/Reservar";
 import About from "./components/About/About";
@@ -21,6 +22,7 @@ ReactDOM.render(
 
     <BrowserRouter> 
     <Navbar></Navbar>
+  <WhatsappContainer/>
     <Switch>
       <Route exact path="/"><App /></Route> 
       <Route path="/vooduplo"><VooduploCont /></Route>

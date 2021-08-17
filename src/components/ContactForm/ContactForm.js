@@ -36,8 +36,8 @@ const UserForm = ({onNameChange, onMailChange, onPhoneChange, name, phone , mail
 
         <div className="signupSection">
         
-        <form action="mailto:juanmanuelotero83@gmail.com" method="POST" className="signupForm" name="signupform">
-          <h2>SIGN UP</h2>
+        <form action="mailto:ovnifloripa@gmail.com" method="POST" className="signupForm" name="signupform">
+          <h2>AGENDE SEU VÔO HOJE E SINTA O PRAZER DE VOAR!!</h2>
           <ul className="noBullet">
             <li>
               <label htmlFor="name"></label>

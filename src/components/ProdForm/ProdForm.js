@@ -11,7 +11,7 @@ const ProdForm = ({onNameChange, onMailChange, onPhoneChange, name, phone , mail
 
          <div className="prodsignupSection">
         
-        <form action="mailto:juanmanuelotero83@gmail.com" method="POST" className="prodsignupForm" name="signupform">
+        <form action="mailto:ovnifloripa@gmail.com" method="POST" className="prodsignupForm" name="signupform">
           <h2>SIGN UP</h2>
           <ul className="prodnoBullet">
             <li>

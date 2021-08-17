@@ -45,11 +45,11 @@ const Footer =  ()=>{
                               <div className= "footer_inst_adress">
                               <h3>MAPA DO SITE</h3>
                               <div  className="footer_mapa_do_site">
-                              <Link>Home</Link>
-                              <Link>Voo Duplo</Link>
-                              <Link>Curso</Link>
-                              <Link>Carta Regalo</Link>
-                              <Link>Quem Somos</Link>
+                              <Link href="/">>Home</Link>
+                              <Link href="/vooduplo">>Voo Duplo</Link>
+                              <Link href="/curso">>Curso</Link>
+                              <Link href="/regalar">>Carta Regalo</Link>
+                              <Link href="/about">>Quem Somos</Link>
                               </div>
                               </div>
    
