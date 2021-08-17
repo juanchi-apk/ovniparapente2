@@ -1,0 +1,28 @@
+.location_image{
+    max-width: 50vw;
+}
+
+.location_container{
+    width: 100%;
+    display:flex;
+    flex-flow: row nowrap;
+    margin: 20px 20px;
+    justify-content: space-evenly;
+}
+
+.location_text{
+    width: 40vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-between;
+
+    h1{
+        font-family: "Montserrat"
+    }
+    h4{
+        font-family: "Montserrat"
+
+    }
+  
+}

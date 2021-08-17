@@ -13,7 +13,10 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Carousel from 'react-material-ui-carousel';
-import WhatsappContainer from '../Whatsapp/Whatsapp'
+import WhatsappContainer from '../Whatsapp/Whatsapp';
+import Faq from "../Faq/Faq"
+
+import Location from '../Location/Location'
 
 
 
@@ -214,7 +217,8 @@ const Home =  ()  => {
       </div>
       
       
-      
+        <Location/>
+        <Faq/>
         </div>
   
     )
