@@ -136,7 +136,8 @@ const Home =  ()  => {
           </div> 
           <StyledCarousel
         
-        autoplay> 
+        autoplay
+        animation="slide"> 
                 {items.map((item,i)=>{ return (
                    <div className="photo_container"> 
                    <Image 

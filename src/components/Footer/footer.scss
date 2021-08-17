@@ -13,14 +13,16 @@
 }
 .footer_columns{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;  
+    width: 100vw;
 }
 
 .footer_columns_item{
     display:flex;
     flex-flow: row wrap;
-    min-width: 30%;
+    min-width: 20%;
+    justify-content: center;
     flex-basis: 1;
 }
 
@@ -49,6 +51,13 @@ width: 120px;
     padding: 10px;
 
 }
+
+
+.footer_mapa_do_site{
+    display:flex;
+    flex-flow:column wrap;      
+}
+
 
 @media (max-width: 600px) {
     .footer{

@@ -34,27 +34,31 @@ const Footer =  ()=>{
                   <div className="footer">
                         <div className = "footer_columns">
                               <div className="footer_columns_item">
-                              <div className = "footer_inst_logo_img">
-                                    <img  alt="logofooter"   width="90" height="90" src={logofooter}/>
-                                    
-                              </div>
-                              
-                              
+
                               <div className= "footer_inst_adress">
                               <h3>QUEM SOMOS</h3>
-                              Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208, 
+                              <p>Somos apaixonados por voo livre, pioneiros na modalidade e vendedores de sonhos.</p>
                               </div>
    
                         </div>
                               <div className="footer_columns_item">
                               <div className= "footer_inst_adress">
-                              Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208, 
+                              <h3>MAPA DO SITE</h3>
+                              <div  className="footer_mapa_do_site">
+                              <Link>Home</Link>
+                              <Link>Voo Duplo</Link>
+                              <Link>Curso</Link>
+                              <Link>Carta Regalo</Link>
+                              <Link>Quem Somos</Link>
+                              </div>
                               </div>
    
                         </div>
                               <div className="footer_columns_item">
                               <div className= "footer_inst_adress">
-                              Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208, 
+                              <h3>LOCALIZAÇÃO</h3>
+
+                              <p>Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208. </p>
                               </div>
    
                         </div>
