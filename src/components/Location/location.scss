@@ -26,3 +26,17 @@
     }
   
 }
+
+@media (max-width: 600px) {
+    .location_container{
+        flex-direction: column;
+        margin:0
+    }
+    .location_image{
+        max-width: 100vw;
+    }
+    .location_text{
+    width: 100vw;
+    }
+    
+    }

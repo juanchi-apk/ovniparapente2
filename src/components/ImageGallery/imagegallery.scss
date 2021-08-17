@@ -10,3 +10,13 @@ height: 400px;
     font-size: 100px;
 }
 
+@media (max-width: 600px) {
+    .photogallery{
+       height: auto;
+        }
+    
+.photogallery_item{
+    width:100%;
+    height: auto
+}
+    }

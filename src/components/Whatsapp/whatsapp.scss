@@ -33,3 +33,23 @@ z-index:4001;
     top:80px;
     
 }
+
+@media (max-width: 600px) {
+    
+    .whatsapp_fixed{
+        font-size: 10px
+    }
+    .whatsapp_cta{
+        width : 30vw;
+        border: 2px solid #00bb2d;
+        height: 40vw;
+        border-radius: 2vw;
+        display:flex;
+        align-items: center;
+        color:#8ef0a5;
+        padding:10px;   
+        font-family:"Montserrat";
+        z-index:4001;
+        
+        } 
+    }

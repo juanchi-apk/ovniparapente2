@@ -67,9 +67,13 @@ width: 120px;
 
         }
 
+    .footer_columns{
+        flex-direction: column;
+    }
+
     .footer_flex_item{
         display:flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         background-color: #222222;
         width:100%;       
         justify-content: center;

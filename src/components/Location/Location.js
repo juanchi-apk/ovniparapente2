@@ -13,7 +13,7 @@ return(
     </div>
     <div className = "location_text">
         <h1>LOCALICAZAO</h1>
-        <h4>A escola está em um lugar privilegiado e estratégico pra quem quer aprender ou vir voar em Florianópolis.</h4>
+        <h4>Nossa escola está em um ponto estratégico. No meio das 6 rampas mais importantes de floranápolis: de Rio vermelho, Brava, Mole, Lagoa Santinho e Moçambique.</h4>
         <p>Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208. </p>
     </div>
 </div>

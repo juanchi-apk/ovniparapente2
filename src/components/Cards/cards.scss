@@ -88,3 +88,12 @@
     margin-top: 320px;
   
   }
+  
+
+  
+@media (max-width: 600px) {
+  .cardContainer{
+
+    flex-direction: column;}
+  
+  }

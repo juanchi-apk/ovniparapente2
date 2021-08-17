@@ -192,6 +192,38 @@
   
   
   @media (max-width: 600px) {
+
+    .inst{
+      flex-direction: column;
+    }
+    .institem{
+      width: 100%;
+    }
+    .inst_text{
+      width: 100%;
+    }
+ .instBanner_tittle{
+  font-size: 40px;
+  margin-top:10px;
+}
+
+.instBanner_subtittle{
+  font-size: 25px;
+}
+
+.instBanner_phrase{
+  
+  font-size: 15px;
+}
+
+.sliderform{
+  flex-direction: column;
+  padding:0px;
+
+}
+.sliderform_slider{
+  width: 100%
+}
     .prod_flex_container{
       flex-direction: column;
   
