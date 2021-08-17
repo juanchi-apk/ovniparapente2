@@ -1,8 +1,5 @@
 import React from "react";
 import "./home.scss";
-import OwlCarousel from "react-owl-carousel";
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Image from "react-bootstrap/Image";  
 import {Button, Link} from "@material-ui/core";
 import Image1 from "../../Images/slide1.jpg";
@@ -15,6 +12,8 @@ import ProductCards from "../Cards/Cards"
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import Carousel from 'react-material-ui-carousel';
+
 
 
 
@@ -24,6 +23,22 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
       
    
 const Home =  ()  => {
+
+  const items= [
+    Image1,
+    Image2,
+    
+    
+]
+
+  const StyledCarousel = withStyles({
+    root: {
+      color: 'white',
+      width:"100vw",
+
+     
+    },
+  })(Carousel);
 
   const StyledButton = withStyles({
     root: {
@@ -119,16 +134,23 @@ const Home =  ()  => {
           <StyledLink href="https://www.youtube.com/channel/UC8Dh9C_NI5boCxO5NLik0vQ/" target="_blank"   ><YouTubeIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
           </div>
           </div> 
-        <OwlCarousel 
-          items="1"
-          autoplay
-          loop
-          quality="50"
-          placeholder="blur"  
-          priority
-        > <Image src={Image1} alt="Image12" />
-          <Image src={Image2} alt="Imagen2" />
-        </OwlCarousel>
+          <StyledCarousel
+        
+        autoplay> 
+                {items.map((item,i)=>{ return (
+                   <div className="photo_container"> 
+                   <Image 
+                   style={{
+                        width: "100vw",
+                        }}
+                    src={item} 
+                    alt={`mainpic${1}`}/>
+                    
+                   </div>
+                    )
+                    })
+                }
+        </StyledCarousel>
         </div>      
 
 
