@@ -24,7 +24,7 @@ const StyledCarousel = withStyles({
 
 const VooduploCont = ()=> {
 
-var items= [
+const items= [
     image3,
     image1,
     image4
