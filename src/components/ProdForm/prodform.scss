@@ -1,0 +1,58 @@
+.prodsignupSection {
+  width: 30vw;
+  height: auto;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:  20px;
+
+  
+}
+
+.prodsignupForm {
+  width: 100%;
+  padding: 30px 0;
+  background: #42f934;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:  20px ;
+
+
+
+  color: white
+}
+
+.prodinputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: rgb(12, 1, 1);
+  outline: none;
+}
+
+.prodnoBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#prodjoin-btn {
+  border: 1px solid rgb(50, 180, 10);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  }
+}

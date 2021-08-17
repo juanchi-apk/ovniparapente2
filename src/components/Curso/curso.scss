@@ -1,0 +1,88 @@
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.css";
+
+.curso_container{
+margin-top: 60px;
+display:flex;
+flex-flow: column  wrap;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.curso_title{
+    font-weight: 900;
+    text-align: center;
+}
+
+.curso_text{
+    font-family: "Style Script";
+    font-size: 20px ;
+    margin-top: 40px;
+    max-width: 60%;
+}
+
+
+
+
+
+
+.photo_container{
+    min-width: 100%;
+    object-fit:cover;
+}
+
+
+.curso_section{
+    margin-top: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 80%;
+    justify-content: space-evenly; 
+    align-items: center;   
+
+}
+
+.curso_FormContainer{
+    margin-top: 70px;
+padding-top:40px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: row nowrap;
+opacity: 0.5;
+-webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      -ms-transition: opacity 0.3s ease-in-out;
+      -o-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+
+&:hover {
+    opacity: 1 ;
+    }
+    &:focus-within {
+        opacity: 1 ;
+        }
+
+}
+
+
+
+
+
+    .smallpic{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      
+    
+    }   
+
+
+/* .photo_container{
+    min-width: 100%;
+    
+    object-fit:fill;    
+    
+} */
+
+
+

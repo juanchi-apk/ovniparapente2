@@ -1,13 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import VooduploCont from "./components/Vooduplo/Vooduplo";
+import Faq from "./components/Faq/Faq";
+import Curso from "./components/Curso/Curso";
+
+import Reservar from "./components/Reservar/Reservar";
+import About from "./components/About/About";
+
+import './index.scss';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter , Switch, Route } from "react-router-dom";
+import store from './store/store'
+import { Provider } from 'react-redux'
+import reportWebVitals from "./reportWebVitals"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store = {store}>
+
+    <BrowserRouter> 
+    <Navbar></Navbar>
+    <Switch>
+      <Route exact path="/"><App /></Route> 
+      <Route path="/vooduplo"><VooduploCont /></Route>
+      <Route path="/curso"><Curso /></Route>
+      <Route path="/regalar"><Reservar /></Route>
+      <Route path="/about"><About /></Route>
+      </Switch>
+      <Footer></Footer>
+      
+    </BrowserRouter>
+    </Provider>,
+
   document.getElementById('root')
 );
 

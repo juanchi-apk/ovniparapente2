@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+
+.homeFlexContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+
+  .instBanner{
+    position:absolute;
+    color:rgb(224, 224, 224);
+    z-index: 45;
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+
+ }
+
+ .instBanner_tittle{
+   font-size: 80px;
+ }
+
+ .instBanner_subtittle{
+  font-size: 50px;
+}
+
+.instBanner_phrase{
+  font-family: "Tangerine";
+  font-size: 50px;
+  width: fit-content;
+  border-top: 2px solid rgb(224, 224, 224);
+  margin-top: 20px;
+}
+
+.instBanner_social{
+  width: 30%;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+
+}
+
+
+
+  .prod_flex_container{
+    display: flex;
+    flex-direction: row wrap;
+    min-height: 700px;    
+    
+  
+  }
+
+  .productCardContainer{
+    padding: 50px 0px;
+    width:100%;
+  }
+
+  .inst{
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  min-height: 500px;
+  background-color: #ffffff;
+  margin-block-end: 0px;
+  }
+  
+  .institem {
+    width:70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .inst_tittle{
+
+    padding-top: 50px;
+    color:#2c2c2c;
+    width: 70%;
+    font-weight: 900;
+    
+
+  
+  }
+  .inst_text{
+    align-self: center;
+    text-align: center;
+    color:#1a1919;
+    width: 70%;
+    font-family: "Style Script";
+    font-size: 20px;
+  }
+
+  .sliderform{
+    padding :20px;
+    display:flex;
+    flex-flow: row nowrap;
+  }
+  .sliderform_slider{
+    width: 70vw;
+  }
+  
+  .sliderform_form{
+    min-width: 500px;    
+    text-align: center;
+  } 
+
+  .prod_flex_container_vooduplo{
+    min-height: 400px;
+    width:50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    
+   
+  }
+  .prod_flex_container h2{
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  }
+  
+  .prod_flex_container_text{
+    display: block;
+    text-align: center;
+    font-family: "Style Script"; 
+    font-size: 20px;
+    padding:20px;
+ 
+  }
+  .prod_flex_container_curso{
+    min-height: 400px;
+    width:50%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #42f934;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carrousel{
+  
+    
+    height: 400px;
+    width: 100%;
+  }
+  
+  .prod_flex_container_btns{
+    padding-top: 40px;
+    color:#8fe06f ;
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)', 
+  }
+
+  .video{
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .instvideo{
+    
+  }
+  
+  
+  @media (max-width: 600px) {
+    .prod_flex_container{
+      flex-direction: column;
+  
+  }
+  
+  .prod_flex_container_curso{
+    width:100%;
+    height: 100%;
+  }
+  .prod_flex_container_vooduplo{
+      width:100%;
+    height: 100%; 
+  }
+  
+  }
+ 
+
+
+.embedvideo{
+             object-fit:contain;
+}
