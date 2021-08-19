@@ -6,7 +6,8 @@ import image2 from '../../Images/vooduplo.jpg';
 import image3 from '../../Images/vooduplo2.jpg';
 import image4 from '../../Images/vooduplo3.jpg';
 import Image from "react-bootstrap/Image";
-import ProdForm from '../ProdForm/ProdForm'
+import ProdForm from '../ProdForm/ProdForm';
+
 
 import { withStyles } from '@material-ui/core/styles';
 import backgroundImage from '../../Images/vooduplo_form.jpg'
@@ -59,7 +60,7 @@ const items= [
                     
                 <h1 className ="vooduplo_title">VOO DUPLO</h1>
             
-                <div className="vooduplo_text">É chamado de VOO DUPLO porque o passageiro é acompanhado por um instrutor habilitado, quem será o responsável pela pilotagem do PARAPENTE. O valor do voo duplo é de R$3.900,00 com pagamento em até 6x sem juros nos cartões de crédito.Voamos todos os dias, sempre dependendo das condições climáticas. Às 13:00 horas (aproximadamente), inicia a subida para a rampa de decolagem, a pé ou caminhonete 4X4. A escolha da rampa será conforme a direção do vento. A duração do voo tem uma média de 15 a 20 minutos no ar, fora o tempo percorrido da trilha para chegar na rampa de decolagem. Todo o passeio tem duração aproximada de um hora e meia. Os voos são realizados quase sempre na Praia Brava. Em alguns casos por motivo de direção do vento, os voos são realizados na Praia do Santinho.
+                <div className="vooduplo_text">É chamado de VOO DUPLO porque o passageiro é acompanhado por um instrutor habilitado, quem será o responsável pela pilotagem do PARAPENTEx. O valor do voo duplo é de R$3.900,00 com pagamento em até 6x sem juros nos cartões de crédito.Voamos todos os dias, sempre dependendo das condições climáticas. Às 13:00 horas (aproximadamente), inicia a subida para a rampa de decolagem, a pé ou caminhonete 4X4. A escolha da rampa será conforme a direção do vento. A duração do voo tem uma média de 15 a 20 minutos no ar, fora o tempo percorrido da trilha para chegar na rampa de decolagem. Todo o passeio tem duração aproximada de um hora e meia. Os voos são realizados quase sempre na Praia Brava. Em alguns casos por motivo de direção do vento, os voos são realizados na Praia do Santinho.
             </div>
         
         </div>

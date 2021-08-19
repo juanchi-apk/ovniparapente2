@@ -1,0 +1,50 @@
+.mobile_signupSection {
+    width: 100vw;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    color: white;
+    padding:10px;
+  }
+  .formtittle{
+      font-family: "Montserrat";
+      font-size: 22px;
+      padding :10px;
+  }
+  .mobile_signupForm{
+    width: 100%;
+    background: rgba(125, 214, 133, 0.8);
+    color: white;
+    padding:10px;
+  }
+  
+  .mobile_inputFields {
+    margin: 5px 0;
+    font-size: 16px;
+    padding: 5px;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background:transparent;
+    color: rgb(12, 1, 1);
+    outline: none;
+  }
+    
+  .mobile_inputFields:focus{
+    background: rgba(20, 20, 20, .2);
+    border-color: white;
+    color:white;
+
+  }
+  
+  #join-btn {
+    border: 1px solid rgb(50, 180, 10);
+    background: rgba(20, 20, 20, .6);
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    
+  }

@@ -8,15 +8,18 @@ import InstImage from "../../Images/logodetalle.png"
 import { withStyles } from '@material-ui/core/styles';
 import ImageGallery from "../ImageGallery/ImageGallery";
 import UserForm from "../ContactForm/ContactForm";
+import MobileForm from "../MobileForm/MobileForm";
+import MobileCards from "../MobileCards/MobileCards"
+
 import ProductCards from "../Cards/Cards"
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Carousel from 'react-material-ui-carousel';
-import WhatsappContainer from '../Whatsapp/Whatsapp';
-import Faq from "../Faq/Faq"
+import Faq from "../Faq/Faq";
+import Location from '../Location/Location';
+import {useMedia} from 'react-use';
 
-import Location from '../Location/Location'
 
 
 
@@ -27,11 +30,12 @@ import Location from '../Location/Location'
    
 const Home =  ()  => {
 
+  const isWide = useMedia('(min-width: 600px)');
+  const isMobile =useMedia('(max-width: 599px)');
+
   const items= [
     Image1,
     Image2,
-    
-    
 ]
 
   const StyledCarousel = withStyles({
@@ -42,7 +46,6 @@ const Home =  ()  => {
      
     },
   })(Carousel);
-
   const StyledButton = withStyles({
     root: {
       background: 'linear-gradient(45deg, #0ed600 30%, #8fe06f 90%)',
@@ -62,7 +65,6 @@ const Home =  ()  => {
       textTransform: 'capitalize',
     },
   })(Button);
-
   const StyledButtongreen = withStyles({
     root: {
       background: 'linear-gradient(45deg, #0b0c13 30%, #383838 100%)',
@@ -83,7 +85,6 @@ const Home =  ()  => {
       textTransform: 'capitalize',
     },
   })(Button);
-
   const StyledButtoninst = withStyles({
     root: {
       background: 'transparent',
@@ -105,6 +106,27 @@ const Home =  ()  => {
       textTransform: 'capitalize',
     },
   })(Button);
+  const MobileStyledButtoninst = withStyles({
+    root: {
+      background: 'transparent',
+      borderRadius: 3,
+      border: "1px solid #0ed600 ",
+      color: '#0ed600',
+      height: 30,
+      marginTop:'50px',     
+
+      '&:hover' :{  
+        background: "#0ed600",
+        color: "white",
+        border: "1px solid white ",
+
+      },
+    },
+    label: {
+      textTransform: 'capitalize',
+    },
+  })(Button);
+
   const StyledLink = withStyles({
     root: {
       background: 'transparent',
@@ -125,9 +147,10 @@ const Home =  ()  => {
   })(Link);
 
   return (
+    <div>
+    {isWide && (
         <div>
-          
-         <div className ="carousel">
+          <div className ="carousel">
           <div  className = "instBanner">
           <h1 className = "instBanner_tittle">OVNI PARAPENTE</h1>
           <h2 className = "instBanner_subtittle" >FLORIPA</h2>
@@ -157,9 +180,7 @@ const Home =  ()  => {
                 }
         </StyledCarousel>
         </div>      
-
-
-        <div className="inst"> 
+          <div className="inst"> 
         <div className = "institem">
           <h1 className= "inst_tittle">O.V.N.I. ESCOLA DE PARAPENTE</h1>
          
@@ -176,8 +197,7 @@ const Home =  ()  => {
 
           </div>
         </div>
-
-        <div className = "sliderform">
+          <div className = "sliderform">
         <div className="sliderform_slider">
         <ImageGallery></ImageGallery>
         </div>
@@ -185,13 +205,10 @@ const Home =  ()  => {
           <UserForm></UserForm>
           </div>
         </div>
-        
-        <div className = "productCardContainer" >
+          <div className = "productCardContainer" >
         <ProductCards/>
         </div>
-              
-
-        <div
+          <div
         className="video"
         style={{
           position: "relative",
@@ -215,14 +232,100 @@ const Home =  ()  => {
 
 
       </div>
-      
-      
-        <Location/>
-        <Faq/>
+          <Location/>
+          <Faq/>
         </div>
-  
-    )
+    )}
+    {isMobile && (
+        <div>
+          <div className ="mobile_carousel">
+        {/*  <div  className = "mobile_instBanner">
+         <h1 className = "mobile_instBanner_tittle">OVNI PARAPENTE</h1>
+         <h2 className = "mobile_instBanner_subtittle" >FLORIPA</h2>
+         <p className = "mobile_instBanner_phrase">Realizando Sohnos</p>
+         <div className = "mobile_instBanner_social">
+         <StyledLink href="https://www.facebook.com/ovniparapente/" target="_blank"><FacebookIcon className="fa fa-plus-circle" style={{ fontSize: 60 }}/></StyledLink>
+         <StyledLink href="https://www.instagram.com/ovniparapenteoficial/" target="_blank" ><InstagramIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
+         <StyledLink href="https://www.youtube.com/channel/UC8Dh9C_NI5boCxO5NLik0vQ/" target="_blank"   ><YouTubeIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
+         </div>
+         </div>  */}
+         <StyledCarousel
+       
+       autoplay
+       animation="slide"> 
+               {items.map((item,i)=>{ return (
+                  <div className="photo_container"> 
+                  <Image 
+                  style={{
+                       width: "100vw",
+                       }}
+                   src={item} 
+                   alt={`mainpic${1}`}/>
+                   
+                  </div>
+                   )
+                   })
+               }
+       </StyledCarousel>
+       </div>      
+          <div className="mobile_inst"> 
+       <div className = "mobile_institem">
+       <div>
+         
+            <img src={InstImage} />
 
+         </div>
+         <h1 className= "inst_tittle">O.V.N.I. ESCOLA DE PARAPENTE</h1>
+        
+           <div className= "mobile_inst_text">
+              Mais de 25 anos de experiencia em vôos duplo, cursos e venda de equipamentos no Brasil e no mundo. Oferecemos Cursos Para Pilotos Nível 1, 2 e 3. Voo Duplo Instrucional, Voo de Paramotor, Propaganda Aérea, Equipamentos entre outros serviços. Com instrutor experiente e habilitado pela CBVL (Confederação Brasileira de Voo Livre).
+           </div>
+           <div>
+           <Link href="/about" ><MobileStyledButtoninst variant="outlined">SABER MAS</MobileStyledButtoninst></Link>
+           </div>
+         </div>  
+         
+       </div>
+          <div className = "mobile_sliderform">
+       <div className="sliderform_slider">
+       
+        <ImageGallery></ImageGallery>
+      </div>
+         <MobileForm></MobileForm>
+       </div>
+          <div className = "productCardContainer" >
+       <MobileCards/>
+       </div>
+          <div
+       className="video"
+       style={{
+         position: "relative",
+         paddingBottom: "56.25%" /* 16:9 */,
+         paddingTop: 25,
+         height: 0
+       }}
+     >
+       <iframe
+         style={{
+           position: "absolute",
+           top: 0,
+           left: "10.7%",
+           width: "80%",
+           height: "80%"
+         }}
+         title="instvideo"
+         src="https://www.youtube.com/embed/kgL1UfBLGoc?rel=0"
+         frameBorder="0"
+       />
+
+
+     </div>
+          <Location/>
+          <Faq/>
+          </div>
+    )}
+
+  </div>)
 };
 
 export default Home;

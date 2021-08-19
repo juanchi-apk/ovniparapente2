@@ -17,10 +17,17 @@
     align-items: center;
     background-color: #ffffff;
   }
-
+  .mobile_carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
 
   .instBanner{
-    position:absolute;
+    position:relative;
     color:rgb(224, 224, 224);
     z-index: 45;
     font-family: "Montserrat";
@@ -30,6 +37,15 @@
     justify-content: flex-start;
     align-items:center;
 
+ }
+
+ .mobile_instBanner{
+  position:sticky;
+  color:rgb(224, 224, 224);
+  z-index: 45;
+  font-family: "Montserrat";
+  letter-spacing: 3px;
+  align-items:center;
  }
 
  .instBanner_tittle{
@@ -79,6 +95,13 @@
   background-color: #ffffff;
   margin-block-end: 0px;
   }
+
+  .mobile_inst{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+
+  }
   
   .institem {
     width:70%;
@@ -87,6 +110,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  }
+
+  .mobile_institem{
+     width:100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2c2c2c;
+    
+    h1{
+      font-size: 22px
+    }
 
   }
   .inst_tittle{
@@ -105,6 +143,11 @@
     color:#1a1919;
     width: 70%;
     font-size: 20px;
+  }
+
+  .mobile_inst_text{
+   width: 100%;
+   font-size:14px; 
   }
 
   .sliderform{
@@ -186,12 +229,10 @@
     width: 100%;
   }
   
-  .instvideo{
-    
-  }
+
   
   
-  @media (max-width: 600px) {
+  /* @media (max-width: 600px) {
 
     .inst{
       flex-direction: column;
@@ -244,4 +285,4 @@
 
 .embedvideo{
              object-fit:contain;
-}
+} */
