@@ -4,9 +4,14 @@ import {setName, setMail ,setPhone} from '../../store/action';
 import { connect } from 'react-redux';
 
 
+
 const UserForm = ({onNameChange, onMailChange, onPhoneChange, name, phone , mail})=>   {
 
-    console.log(name + phone + mail)
+    console.log(name + phone + mail);
+
+
+
+
     return (
 
        /*  <div classNameName="formContainer">

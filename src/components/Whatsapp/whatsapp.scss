@@ -1,7 +1,6 @@
 .whatsapp_cta{
-width : 20vw;
+width : 30vw;
 border: 2px solid #00bb2d;
-height: 11vw;
 border-radius: 2vw;
 display:flex;
 align-items: center;
@@ -14,8 +13,7 @@ z-index:4001;
 .whatsapp_container{ 
     display:flex;
     flex-flow:row nowrap;
-    width:50vw;
-    height: 11vw;
+    max-width:30vw;
     z-index: 4000;
     align-items: center;
     &:hover{
@@ -27,29 +25,32 @@ z-index:4001;
 }   
 }
 .whatsapp_fixed{
-    width:50vw;
+    width:20vw;
     z-index: 500;
     position:fixed;
     top:80px;
     
 }
 
-@media (max-width: 600px) {
+.mobile_whatsapp_fixed{
+    width:40vw;
+    z-index: 500;
+    position:fixed;
+    top:80px;
+    left:10px;
     
-    .whatsapp_fixed{
-        font-size: 10px
-    }
-    .whatsapp_cta{
-        width : 30vw;
-        border: 2px solid #00bb2d;
-        height: 40vw;
-        border-radius: 2vw;
-        display:flex;
-        align-items: center;
-        color:#8ef0a5;
-        padding:10px;   
-        font-family:"Montserrat";
-        z-index:4001;
-        
-        } 
+}
+
+.mobile_whatsapp_cta{
+    width : 40vw;
+    border: 2px solid #00bb2d;
+    border-radius: 2vw;
+    display:flex;
+    align-items: center;
+    color:#8ef0a5;
+    padding:10px;   
+    font-family:"Montserrat";
+    font-size: 10px;
+    z-index:4001;
+    
     }

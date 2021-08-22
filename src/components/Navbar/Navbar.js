@@ -15,23 +15,44 @@ const styleSheet = {
   list : {
     width : 200,
     color: "white",
+    height:"auto"
   },
   padding : {
-    paddingRight : 30,
+    paddingRight :8,
     cursor : "pointer",
   },
 
   sideBarIcon : {
     padding : 0,
-    color : "white",
+    color : '#42f934',
     cursor : "pointer",
   },
 
   navbarcolor :{
-    backgroundColor:"#42f934",
+    backgroundColor:"#FFFFFF",
   height: "80x",
 zIndex:"50"}
 }
+
+const StyledLink = withStyles({
+  root: {
+    color: '#42f934',
+
+    transform:"1s background-color",
+    '&:hover' :{  
+      color: "#ffffff",
+      textDecoration:"none",
+      background:"#42f934"
+
+    },     
+
+   
+  },
+  label: {
+    textTransform: 'capitalize',
+  },
+})(Link);
+
 
 class ResAppBar extends Component{
   constructor(props){
@@ -85,11 +106,11 @@ class ResAppBar extends Component{
              onKeyDown={()=>{this.setState({drawer:false})}}>
 
             <List className = {this.props.classes.list}>
-               <ListItem key = {1} button divider> <Link href="/">HOME</Link></ListItem>
-               <ListItem key = {2} button divider> <Link href="/vooduplo">VOO DUPLO</Link> </ListItem>
-               <ListItem key = {3} button divider> <Link href="/curso">CURSO</Link> </ListItem>
-               <ListItem key = {4} button divider> <Link href="/regalar">REGALAR</Link> </ListItem>
-               <ListItem key = {5} button divider> <Link href="/about">QUEM SOMOS</Link> </ListItem>
+               <ListItem key = {1} button divider> <StyledLink href="/">HOME</StyledLink></ListItem>
+               <ListItem key = {2} button divider> <StyledLink href="/vooduplo">VOO DUPLO</StyledLink> </ListItem>
+               <ListItem key = {3} button divider> <StyledLink href="/curso">CURSO</StyledLink> </ListItem>
+               <ListItem key = {4} button divider> <StyledLink href="/regalar">CARTÃO PRESENTE</StyledLink> </ListItem>
+               <ListItem key = {5} button divider> <StyledLink href="/about">QUEM SOMOS</StyledLink> </ListItem>
              </List>
 
          </div>
@@ -108,19 +129,19 @@ class ResAppBar extends Component{
         <Avatar alt="Remy Sharp" src={navImage} className={classes.large} />
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" ></Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-              <Link href="/" >HOME</Link>
+              <StyledLink href="/" >HOME</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-              <Link href="/vooduplo" >VOO DUPLO</Link>
+              <StyledLink href="/vooduplo" >VOO DUPLO</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-              <Link href="/curso" >CURSO</Link>
+              <StyledLink href="/curso" >CURSO</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-             <Link href="/regalar" >REGALAR</Link>
+             <StyledLink href="/regalar" >CARTÃO PRESENTE</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-             <Link href="/about" >QUEM SOMOS</Link>
+             <StyledLink href="/about" >QUEM SOMOS</StyledLink>
             </Typography>
         </Toolbar>
       </AppBar>

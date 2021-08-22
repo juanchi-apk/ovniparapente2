@@ -24,7 +24,7 @@ const StyledButtonProd = withStyles({
       height: 40,
       padding: '0px 30px',
       marginTop:'10px',
-      float:"rigth",
+      minWidth:"90%"
         
     },
     label: {
@@ -37,7 +37,8 @@ const StyledButtonProd = withStyles({
       maxWidth: 320,
       marginLeft:"auto",
       marginRight:"auto",
-      marginTop: "10px"
+      marginTop: "10px",
+      minWidth:320
     },
     media: {
       height: 140,
@@ -50,7 +51,7 @@ const ProductCards = () => {
     const classes = useStyles();
 
     return (
-        <div>
+        <div className ="mobileCardContainer">
         <Card className={classes.root}>
           <CardActionArea>
             <CardMedia
@@ -68,7 +69,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <StyledButtonProd>Saber Mas</StyledButtonProd>
+            <div className="card_btn"><StyledButtonProd>Saber Mas</StyledButtonProd></div>
            
           </CardActions>
         </Card>
@@ -90,7 +91,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <StyledButtonProd>Saber Mas</StyledButtonProd>
+          <div className="card_btn"><StyledButtonProd>Saber Mas</StyledButtonProd></div>
           </CardActions>
         </Card>
         <Card className={classes.root}>
@@ -102,7 +103,7 @@ const ProductCards = () => {
             />
             <CardContent>
             <div className= "mobile_prodtittle">
-            CARTON REGALO 
+            CARTÃO PRESENTE
             </div>
               <Typography variant="body2" color="textSecondary" component="p">
               Compra un voo para tu amigo!
@@ -110,7 +111,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <StyledButtonProd>Saber Mas</StyledButtonProd>
+          <div className="card_btn"><StyledButtonProd>Saber Mas</StyledButtonProd></div>
           </CardActions>
         </Card>
       

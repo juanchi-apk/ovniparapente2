@@ -37,17 +37,17 @@ return (
     <div className  = "cardContainer">
     <div className="card transition">
         <h2 className="transition">VOODUPLO<br/><small> Voa acompanhado por um instrutor habilitado! </small></h2>
-        <div className="cta-container transition"><Link href="/vooduplo" ><StyledButtonProd>Button</StyledButtonProd></Link></div>
+        <div className="cta-container transition"><Link href="/vooduplo" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
         <div className="card_circle transition circle1"><Image src={image1} roundedCircle /></div>
     </div>
     <div className="card transition">
         <h2 className="transition">CURSO PARAPENTE<br/><small>Curso tem duração em média de 40 horas</small></h2>
-        <div className="cta-container transition"><Link href="/curso" ><StyledButtonProd>Button</StyledButtonProd></Link></div>
+        <div className="cta-container transition"><Link href="/curso" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
         <div className="card_circle transition circle2" ><Image src={image2} roundedCircle /></div>
     </div>          
     <div className="card transition">
-        <h2 className="transition">REGALAR<br/><small>Compra un voo para tu amigo!</small></h2>
-        <div className="cta-container transition"><Link href="/regalar" ><StyledButtonProd>Button</StyledButtonProd></Link></div>
+        <h2 className="transition">CARTÃO PRESENTE<br/><small>Compra un voo para tu amigo!</small></h2>
+        <div className="cta-container transition"><Link href="/regalar" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
         <div className="card_circle transition circle3" ><Image src={image3} roundedCircle /></div>
     </div>
     </div>

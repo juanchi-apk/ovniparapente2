@@ -14,7 +14,9 @@ return(
     <div className = "location_text">
         <h1>LOCALICAZAO</h1>
         <h4>Nossa escola está em um ponto estratégico. No meio das 6 rampas mais importantes de floranápolis: de Rio vermelho, Brava, Mole, Lagoa Santinho e Moçambique.</h4>
-        <p>Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208. </p>
+        <p>Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianápolis - SC, 88060-208. </p>
+        <p>Horário de segunda a domingo, das 11:00h às 19:30h</p>
+        <p>Tel: +55 48 9985-8393</p>
     </div>
 </div>
 

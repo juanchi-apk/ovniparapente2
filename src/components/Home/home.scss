@@ -27,7 +27,7 @@
   }
 
   .instBanner{
-    position:relative;
+    position:absolute;
     color:rgb(224, 224, 224);
     z-index: 45;
     font-family: "Montserrat";
@@ -99,6 +99,7 @@
   .mobile_inst{
     display:flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
 
   }
@@ -114,7 +115,7 @@
   }
 
   .mobile_institem{
-     width:100%;
+     width:80%;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -143,6 +144,7 @@
     color:#1a1919;
     width: 70%;
     font-size: 20px;
+    margin-bottom:10px;
   }
 
   .mobile_inst_text{
@@ -224,65 +226,30 @@
   .video{
     display: flex;
     flex-direction: row;
+    margin-top:20px;
     outline: none;
     height: 100%;
     width: 100%;
   }
   
-
+.aulavirtual{
   
-  
-  /* @media (max-width: 600px) {
-
-    .inst{
-      flex-direction: column;
-    }
-    .institem{
-      width: 100%;
-    }
-    .inst_text{
-      width: 100%;
-    }
- .instBanner_tittle{
-  font-size: 40px;
-  margin-top:10px;
-}
-
-.instBanner_subtittle{
-  font-size: 25px;
-}
-
-.instBanner_phrase{
-  
-  font-size: 15px;
-}
-
-.sliderform{
-  flex-direction: column;
-  padding:0px;
-
-}
-.sliderform_slider{
-  width: 100%
-}
-    .prod_flex_container{
-      flex-direction: column;
-  
-  }
-  
-  .prod_flex_container_curso{
-    width:100%;
-    height: 100%;
-  }
-  .prod_flex_container_vooduplo{
-      width:100%;
-    height: 100%; 
-  }
-  
-  }
+    background-color: #222222;
+    padding:10px;
+    color:#ffffff;
+    font-family: "Montserrat";
+    font-size:26px;
  
+}
 
+.mobile_aulavirtual{
+  
+  background-color: #222222;
+  padding:10px;
+  color:#ffffff;
+  font-family: "Montserrat";
+  font-size:26px;
+  width:100%;
+}
 
-.embedvideo{
-             object-fit:contain;
-} */
+  

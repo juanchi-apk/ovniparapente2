@@ -10,12 +10,18 @@
     justify-content: center;
     align-items: center;
     
+    h3{
+        font-family: "Montserrat"
+        
+    }
+    
 }
 .footer_columns{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;  
     width: 100vw;
+    align-items: flex-start;
 }
 
 .footer_columns_item{
@@ -23,6 +29,7 @@
     flex-flow: row wrap;
     min-width: 20%;
     justify-content: center;
+    align-items: center;
     flex-basis: 1;
 }
 
@@ -55,21 +62,26 @@ width: 120px;
 
 .footer_mapa_do_site{
     display:flex;
-    flex-flow:column wrap;      
+    flex-flow:column wrap;
+    align-items: center;      
 }
 
 
 @media (max-width: 600px) {
     .footer{
         flex-direction: column;
-        align-items: flex-start ;  
         width: 100%     ;
+        justify-content: center;
 
         }
 
-    .footer_columns{
-        flex-direction: column;
-    }
+        .footer_columns{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;  
+            width: 100vw;
+            align-items: center;
+        }
 
     .footer_flex_item{
         display:flex;
@@ -77,8 +89,18 @@ width: 120px;
         background-color: #222222;
         width:100%;       
         justify-content: center;
-        text-align: center;    }
-        
+        text-align: center;
+        align-items: center;
+       
+    }
+    .footer_inst_adress{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        font-weight:400;
+    }
             .social_media_display{
         justify-content: space-evenly;
 

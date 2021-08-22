@@ -9,7 +9,10 @@ import Image from "react-bootstrap/Image";
 import ProdForm from '../ProdForm/ProdForm'
 import { withStyles } from '@material-ui/core/styles';
 import backgroundImage from '../../Images/curso_form.jpg';
+import MobileForm from "../MobileForm/MobileForm"
 
+
+import {useMedia} from 'react-use';
 
 
 const StyledCarousel = withStyles({
@@ -23,6 +26,9 @@ const StyledCarousel = withStyles({
 
 const CursoCont = ()=> {
 
+    const isWide = useMedia('(min-width: 600px)');
+    const isMobile =useMedia('(max-width: 599px)');
+
 var items= [
     image3,
     image1,
@@ -32,7 +38,8 @@ var items= [
 
 
     return (
-        <div className = "curso_container">
+    <div>
+        {isWide&& (<div className = "curso_container">
         <div className ="curso_gallery">   
         <StyledCarousel> 
                 {items.map((item,i)=>{ return (
@@ -63,6 +70,43 @@ var items= [
             
         </div>
         </div>
+    </div>
+        )}
+        {isMobile &&(
+            <div className = "vooduplo_container">
+            <div className ="vooDuplo_gallery">   
+                <StyledCarousel
+    
+    autoplay> 
+            {items.map((item,i)=>{ return (
+               <div className="photo_container"> 
+               <Image 
+               style={{
+                    width: "100vw",
+                    }}
+                src={item} 
+                alt={`vooduplo${1}`}/>
+                
+               </div>
+                )
+                })
+            }
+    </StyledCarousel>
+            </div>
+            <div className = "mobile_curso_section">
+                <h1 className ="mobile_curso_title">CURSO PARAPENTE</h1>
+                <div className="mobile_curso_text">
+                <p>Curso de Piloto Solo de Parapente, tem duração em média de 40 horas, podendo variar por motivos climáticos e disponibilidade do aluno.</p>
+                <p>O valor do curso é de R$3.900,00 com pagamento em até 6x sem juros nos cartões de crédito. Estão inclusos todo o material didático e de treino, não é necessário o aluno possuir nenhum tipo de equipamento inicial</p>
+                <p>Você receberá um certificado. depois de terminar seu curso.</p>
+                </div>
+            </div>
+            <div className= "mobile_curso_FormContainer">
+                <Image src={backgroundImage} fluid />
+                <MobileForm/>
+            </div>
+        </div>    
+        )}
     </div>
     )
 }

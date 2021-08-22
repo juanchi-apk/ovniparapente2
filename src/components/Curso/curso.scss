@@ -81,4 +81,12 @@ opacity: 0.5;
 } */
 
 
-
+.mobile_curso_section{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    align-items: center;
+}
+.mobile_curso_title{
+    font-family: "Montserrat"
+}

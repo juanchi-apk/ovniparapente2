@@ -9,9 +9,8 @@ import { withStyles } from '@material-ui/core/styles';
 import ImageGallery from "../ImageGallery/ImageGallery";
 import UserForm from "../ContactForm/ContactForm";
 import MobileForm from "../MobileForm/MobileForm";
-import MobileCards from "../MobileCards/MobileCards"
-
-import ProductCards from "../Cards/Cards"
+import MobileCards from "../MobileCards/MobileCards";
+import ProductCards from "../Cards/Cards";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
@@ -19,6 +18,7 @@ import Carousel from 'react-material-ui-carousel';
 import Faq from "../Faq/Faq";
 import Location from '../Location/Location';
 import {useMedia} from 'react-use';
+import CBVL_logo from '../../Images/logo_cbvl.png';
 
 
 
@@ -115,12 +115,7 @@ const Home =  ()  => {
       height: 30,
       marginTop:'50px',     
 
-      '&:hover' :{  
-        background: "#0ed600",
-        color: "white",
-        border: "1px solid white ",
-
-      },
+     
     },
     label: {
       textTransform: 'capitalize',
@@ -187,6 +182,7 @@ const Home =  ()  => {
             <div className= "inst_text">
                Mais de 25 anos de experiencia em vôos duplo, cursos e venda de equipamentos no Brasil e no mundo. Oferecemos Cursos Para Pilotos Nível 1, 2 e 3. Voo Duplo Instrucional, Voo de Paramotor, Propaganda Aérea, Equipamentos entre outros serviços. Com instrutor experiente e habilitado pela CBVL (Confederação Brasileira de Voo Livre).
             </div>
+            <Image src={CBVL_logo} roundedCircle />
             <div>
             <Link href="/about" ><StyledButtoninst variant="outlined">SABER MAS</StyledButtoninst></Link>
             </div>
@@ -207,6 +203,13 @@ const Home =  ()  => {
         </div>
           <div className = "productCardContainer" >
         <ProductCards/>
+      
+
+        </div>
+
+        <div className="aulavirtual">
+        <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div> 
+        <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><StyledButtoninst>AULA VIRTUAL</StyledButtoninst></StyledLink>
         </div>
           <div
         className="video"
@@ -226,7 +229,7 @@ const Home =  ()  => {
             height: "80%"
           }}
           title="instvideo"
-          src="https://www.youtube.com/embed/kgL1UfBLGoc?rel=0"
+          src="https://www.youtube.com/embed/Y534Rxs0Ahw"
           frameBorder="0"
         />
 
@@ -237,7 +240,7 @@ const Home =  ()  => {
         </div>
     )}
     {isMobile && (
-        <div>
+        <div style={{width:"100vw"}}>
           <div className ="mobile_carousel">
         {/*  <div  className = "mobile_instBanner">
          <h1 className = "mobile_instBanner_tittle">OVNI PARAPENTE</h1>
@@ -270,16 +273,17 @@ const Home =  ()  => {
        </div>      
           <div className="mobile_inst"> 
        <div className = "mobile_institem">
-       <div>
+       <div style={{width:"80%"}}>
          
-            <img src={InstImage} />
+            <Image src={InstImage} fluid />
 
          </div>
-         <h1 className= "inst_tittle">O.V.N.I. ESCOLA DE PARAPENTE</h1>
+         <h1 className= "mobile_inst_tittle">O.V.N.I. ESCOLA DE PARAPENTE</h1>
         
            <div className= "mobile_inst_text">
               Mais de 25 anos de experiencia em vôos duplo, cursos e venda de equipamentos no Brasil e no mundo. Oferecemos Cursos Para Pilotos Nível 1, 2 e 3. Voo Duplo Instrucional, Voo de Paramotor, Propaganda Aérea, Equipamentos entre outros serviços. Com instrutor experiente e habilitado pela CBVL (Confederação Brasileira de Voo Livre).
            </div>
+           <Image src={CBVL_logo} thumbnail/>
            <div>
            <Link href="/about" ><MobileStyledButtoninst variant="outlined">SABER MAS</MobileStyledButtoninst></Link>
            </div>
@@ -295,10 +299,17 @@ const Home =  ()  => {
        </div>
           <div className = "productCardContainer" >
        <MobileCards/>
+
+       <div className="mobile_aulavirtual">
+        <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div>
+        <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><MobileStyledButtoninst>AULA VIRTUAL</MobileStyledButtoninst></StyledLink>
+        </div>
        </div>
           <div
        className="video"
        style={{
+         display:"flex",
+         justifyContent:"center",
          position: "relative",
          paddingBottom: "56.25%" /* 16:9 */,
          paddingTop: 25,
@@ -309,12 +320,11 @@ const Home =  ()  => {
          style={{
            position: "absolute",
            top: 0,
-           left: "10.7%",
            width: "80%",
            height: "80%"
          }}
          title="instvideo"
-         src="https://www.youtube.com/embed/kgL1UfBLGoc?rel=0"
+         src="https://www.youtube.com/embed/Y534Rxs0Ahw"
          frameBorder="0"
        />
 

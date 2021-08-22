@@ -1,18 +1,32 @@
-line-height: 1.6;
-font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
-color: #50514f;
-font-weight: 400;
--webkit-font-smoothing: antialiased;
--webkit-text-size-adjust: 100%;
-text-align: center;
-direction: ltr;
-word-wrap: break-word;
-word-break: break-word;
-display: inline-block;
-box-sizing: border-box;
-font-size: 16px;
-min-height: 1px;
-vertical-align: top;
-width: 25%;
-margin: 0;
-padding: 10px;
+.cartaoRegaloContainer{
+    margin-top:60px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile_presente_section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile_presente_title{
+font-family: "Montserrat"
+}
+.presente_btn{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.presente_section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+    width: 50%;
+}
+
+.presente_title{
+    font-family: "Montserrat"
+}

@@ -41,6 +41,15 @@
 }
 
 @media (max-width: 600px) {
+    .questioncontainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 90vw;
+        color: #fff;
+    }
+
     .questionitem{
     font-size: 10px;   
     border:none;

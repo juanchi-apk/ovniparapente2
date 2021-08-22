@@ -1,9 +1,11 @@
 
-.mobile_cardContainer{
+.mobileCardContainer{
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
+    justify-content: center;
     width: 100%;
+    margin-bottom:15px;
     
 }
 
@@ -75,7 +77,11 @@
 .mobile_prodtittle{
     font-family: "Montserrat";
 }
-  
+.card_btn{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+}
 
 
      
