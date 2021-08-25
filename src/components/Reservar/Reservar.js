@@ -5,6 +5,10 @@ import "./reservar.scss";
 import {Button, Link} from "@material-ui/core";
 import { withStyles } from '@material-ui/core/styles';
 import {useMedia} from 'react-use';
+import ProdForm from '../ProdForm/ProdForm';
+import MobileForm from "../MobileForm/MobileForm"
+
+
 
 
 
@@ -87,6 +91,7 @@ const Reservar = ()=>{
                 <div className = "presente_btn"><StyledLinkpresente href="https://api.whatsapp.com/send?phone=554899858393&text=Quero%20acessar%20o%20link%20do%20cupom%20de%20presente%20para%20um%20amigo" target="_blank"><StyledButtonpresente>Clique aqui para acessar o cupom</StyledButtonpresente></StyledLinkpresente></div>
                 </div>
             </div>
+            <ProdForm/>
             
             </div>
 
@@ -103,7 +108,7 @@ const Reservar = ()=>{
             <div className = "presente_btn"><StyledLinkpresente href="https://api.whatsapp.com/send?phone=554899858393&text=Quero%20acessar%20o%20link%20do%20cupom%20de%20presente%20para%20um%20amigo" target="_blank"><MobileStyledButton>Clique aqui para acessar o cupom</MobileStyledButton></StyledLinkpresente></div>
             </div>
         </div>
-        
+        <MobileForm/>
         </div>)}
         </div>
 

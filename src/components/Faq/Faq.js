@@ -76,7 +76,7 @@ const Faq = ()=>{
             </StyledCarousel>
 
                 
-                 <div>
+                 <div className="faqInfo">
                      <p>Duração do vôo: entre 10 e 25 minutos.</p>
                     <p>A EMPRESA SE RESERVA: o direito de cancelar o voo duplo de parapente, alterar ou mudar o local de decolagem, a data e o horário do serviço  por razões de força maior ou para o melhor desempenho da prática deste esporte.
                     </p>

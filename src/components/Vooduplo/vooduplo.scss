@@ -6,13 +6,13 @@ display:flex;
 flex-flow: column  wrap;
 justify-content: space-between;
 align-items: center;
-
+width: 100%;
 }
 .vooduplo_section{
     margin-top: 120px;
     display: flex;
     flex-flow: row nowrap;
-    max-width: 80%;
+    width: 90%;
     justify-content: space-evenly; 
     align-items: center;   
 
@@ -30,17 +30,7 @@ align-items: center;
 }
 
 .vooduplo_FormContainer{
-    margin-top: 70px;
-    padding-top:40px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row nowrap;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.3s ease-in-out;
-          -moz-transition: opacity 0.3s ease-in-out;
-          -ms-transition: opacity 0.3s ease-in-out;
-          -o-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
+     
     
     &:hover {
         opacity: 1 ;
@@ -52,7 +42,7 @@ align-items: center;
 
 .smallpic{
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 
 }
 

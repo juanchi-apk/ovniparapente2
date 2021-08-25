@@ -8,8 +8,11 @@ import {
   withStyles, Grid, SwipeableDrawer, Link, Avatar
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import navImage from '../../Images/faviconOvni.png';
 import zIndex from '@material-ui/core/styles/zIndex';
+import navImage from "../../Images/logodetalle.png"    ;
+import Image from "react-bootstrap/Image";  
+
+
 
 const styleSheet = {
   list : {
@@ -87,7 +90,7 @@ class ResAppBar extends Component{
               <MenuIcon
                 className = {this.props.classes.sideBarIcon}
                 onClick={()=>{this.setState({drawer:true})}} />
-                        <Avatar alt="Remy Sharp" src={navImage} className={this.props.classes.large} />
+                        <Image alt="Remy Sharp" src={navImage} height="40px" />
 
                   <Typography color="inherit" variant = "headline"></Typography>
             </Grid>
@@ -126,7 +129,7 @@ class ResAppBar extends Component{
       return (
       <AppBar className={this.props.classes.navbarcolor}>
         <Toolbar>
-        <Avatar alt="Remy Sharp" src={navImage} className={classes.large} />
+        <span><Image alt="Remy Sharp" height="70px" src={navImage}  /></span>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" ></Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
               <StyledLink href="/" >HOME</StyledLink>

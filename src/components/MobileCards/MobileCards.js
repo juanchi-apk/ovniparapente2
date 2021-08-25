@@ -15,6 +15,7 @@ import {Button, Link} from "@material-ui/core";
 import { withStyles } from '@material-ui/core/styles';
 
 
+
 const StyledButtonProd = withStyles({
     root: {
         backgroundColor: "transparent",
@@ -34,11 +35,11 @@ const StyledButtonProd = withStyles({
 
   const useStyles = makeStyles({
     root: {
-      maxWidth: 320,
+      width: "100%",
       marginLeft:"auto",
       marginRight:"auto",
       marginTop: "10px",
-      minWidth:320
+      
     },
     media: {
       height: 140,
@@ -69,7 +70,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <div className="card_btn"><StyledButtonProd>Saber Mas</StyledButtonProd></div>
+           <div className="card_btn"> <link href="/vooduplo"><StyledButtonProd>Saber Mais</StyledButtonProd></link></div>
            
           </CardActions>
         </Card>
@@ -91,7 +92,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <div className="card_btn"><StyledButtonProd>Saber Mas</StyledButtonProd></div>
+          <div className="card_btn"><link href="/curso"><StyledButtonProd>Saber Mais</StyledButtonProd></link></div>
           </CardActions>
         </Card>
         <Card className={classes.root}>
@@ -111,7 +112,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <div className="card_btn"><StyledButtonProd>Saber Mas</StyledButtonProd></div>
+          <div className="card_btn"><link href="/regalar"><StyledButtonProd>Saber Mais</StyledButtonProd></link></div>
           </CardActions>
         </Card>
       

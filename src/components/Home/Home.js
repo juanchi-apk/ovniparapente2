@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 import {Button, Link} from "@material-ui/core";
 import Image1 from "../../Images/slide1.jpg";
 import Image2 from "../../Images/slide2.jpg";
-import InstImage from "../../Images/logodetalle.png"    
+import InstImage from "../../Images/faviconOvni.png"    
 import { withStyles } from '@material-ui/core/styles';
 import ImageGallery from "../ImageGallery/ImageGallery";
 import UserForm from "../ContactForm/ContactForm";
@@ -106,6 +106,28 @@ const Home =  ()  => {
       textTransform: 'capitalize',
     },
   })(Button);
+  const StyledButtonaula = withStyles({
+    root: {
+      background: 'transparent',
+      borderRadius: 3,
+      border: "2px solid #0ed600 ",
+      color: '#0ed600',
+      height: 48,
+      padding: '0 30px',
+      marginTop:'50px',  
+      fontWeight:"600"   ,
+
+      '&:hover' :{  
+        background: "#0ed600",
+        color: "white",
+        border: "1px solid white ",
+
+      },
+    },
+    label: {
+      textTransform: 'capitalize',
+    },
+  })(Button);
   const MobileStyledButtoninst = withStyles({
     root: {
       background: 'transparent',
@@ -121,6 +143,22 @@ const Home =  ()  => {
       textTransform: 'capitalize',
     },
   })(Button);
+  const MobileStyledButtonaula = withStyles({
+    root: {
+      background: 'transparent',
+      borderRadius: 3,
+      border: "1px solid #0ed600 ",
+      color: '#0ed600',
+      height: 30,
+      marginTop:'50px',     
+
+     
+    },
+    label: {
+      textTransform: 'capitalize',
+    },
+  })(Button);
+  
 
   const StyledLink = withStyles({
     root: {
@@ -149,7 +187,7 @@ const Home =  ()  => {
           <div  className = "instBanner">
           <h1 className = "instBanner_tittle">OVNI PARAPENTE</h1>
           <h2 className = "instBanner_subtittle" >FLORIPA</h2>
-          <p className = "instBanner_phrase">Realizando Sohnos</p>
+          <p className = "instBanner_phrase">Realizando Sohnos desde 1974</p>
           <div className = "instBanner_social">
           <StyledLink href="https://www.facebook.com/ovniparapente/" target="_blank"><FacebookIcon className="fa fa-plus-circle" style={{ fontSize: 60 }}/></StyledLink>
           <StyledLink href="https://www.instagram.com/ovniparapenteoficial/" target="_blank" ><InstagramIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
@@ -184,7 +222,7 @@ const Home =  ()  => {
             </div>
             <Image src={CBVL_logo} roundedCircle />
             <div>
-            <Link href="/about" ><StyledButtoninst variant="outlined">SABER MAS</StyledButtoninst></Link>
+            <Link href="/about" ><StyledButtoninst variant="outlined">SABER MAIS</StyledButtoninst></Link>
             </div>
           </div>  
           <div>
@@ -209,7 +247,7 @@ const Home =  ()  => {
 
         <div className="aulavirtual">
         <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div> 
-        <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><StyledButtoninst>AULA VIRTUAL</StyledButtoninst></StyledLink>
+        <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><StyledButtonaula>AULA VIRTUAL</StyledButtonaula></StyledLink>
         </div>
           <div
         className="video"
@@ -218,7 +256,7 @@ const Home =  ()  => {
           paddingBottom: "56.25%" /* 16:9 */,
           paddingTop: 25,
           height: 0
-        }}
+        }}                         
       >
         <iframe
           style={{
@@ -240,7 +278,7 @@ const Home =  ()  => {
         </div>
     )}
     {isMobile && (
-        <div style={{width:"100vw"}}>
+        <div >
           <div className ="mobile_carousel">
         {/*  <div  className = "mobile_instBanner">
          <h1 className = "mobile_instBanner_tittle">OVNI PARAPENTE</h1>
@@ -260,7 +298,7 @@ const Home =  ()  => {
                   <div className="photo_container"> 
                   <Image 
                   style={{
-                       width: "100vw",
+                       width: "100%",
                        }}
                    src={item} 
                    alt={`mainpic${1}`}/>
