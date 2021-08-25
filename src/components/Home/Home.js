@@ -235,7 +235,7 @@ const Home =  ()  => {
         <div className="sliderform_slider">
         <ImageGallery></ImageGallery>
         </div>
-        <div className = "sliderform_form">
+        <div className = "sliderform_form" id="mainform">
           <UserForm></UserForm>
           </div>
         </div>
@@ -245,7 +245,7 @@ const Home =  ()  => {
 
         </div>
 
-        <div className="aulavirtual">
+        <div className="aulavirtual" id="aulacont">
         <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div>
         <p>Nesta aula virtual você poderá esclarecer todas as suas dúvidas ou preocupações que aparecem na hora de escolher uma escola para se formar como piloto de Parapente.</p> 
         <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><StyledButtonaula>AULA VIRTUAL</StyledButtonaula></StyledLink>
@@ -334,12 +334,12 @@ const Home =  ()  => {
        
         <ImageGallery></ImageGallery>
       </div>
-         <MobileForm></MobileForm>
+         <span id="mainform"><MobileForm></MobileForm></span>
        </div>
           <div className = "productCardContainer" >
        <MobileCards/>
 
-       <div className="mobile_aulavirtual">
+       <div className="mobile_aulavirtual" id="aulacont">
         <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div>
         <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><MobileStyledButtoninst>AULA VIRTUAL</MobileStyledButtoninst></StyledLink>
         </div>

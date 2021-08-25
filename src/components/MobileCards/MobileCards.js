@@ -70,7 +70,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-           <div className="card_btn"> <link href="/vooduplo"><StyledButtonProd>Saber Mais</StyledButtonProd></link></div>
+           <div className="card_btn"> <Link href="/vooduplo"><StyledButtonProd>Saber Mais</StyledButtonProd></Link></div>
            
           </CardActions>
         </Card>
@@ -92,7 +92,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <div className="card_btn"><link href="/curso"><StyledButtonProd>Saber Mais</StyledButtonProd></link></div>
+          <div className="card_btn"><Link href="/curso"><StyledButtonProd>Saber Mais</StyledButtonProd></Link></div>
           </CardActions>
         </Card>
         <Card className={classes.root}>
@@ -112,7 +112,7 @@ const ProductCards = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <div className="card_btn"><link href="/regalar"><StyledButtonProd>Saber Mais</StyledButtonProd></link></div>
+          <div className="card_btn"><Link href="/regalar"><StyledButtonProd>Saber Mais</StyledButtonProd></Link></div>
           </CardActions>
         </Card>
       

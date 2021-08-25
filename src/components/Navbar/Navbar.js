@@ -113,7 +113,9 @@ class ResAppBar extends Component{
                <ListItem key = {2} button divider> <StyledLink href="/vooduplo">VOO DUPLO</StyledLink> </ListItem>
                <ListItem key = {3} button divider> <StyledLink href="/curso">CURSO</StyledLink> </ListItem>
                <ListItem key = {4} button divider> <StyledLink href="/regalar">CARTÃO PRESENTE</StyledLink> </ListItem>
-               <ListItem key = {5} button divider> <StyledLink href="/about">QUEM SOMOS</StyledLink> </ListItem>
+               <ListItem key = {5} button divider> <StyledLink href="#aulacont">AULA VIRTUAL</StyledLink> </ListItem>
+               <ListItem key = {6} button divider> <StyledLink href="#mainform">CONTACTO</StyledLink> </ListItem>
+               <ListItem key = {7} button divider> <StyledLink href="/about">QUEM SOMOS</StyledLink> </ListItem>
              </List>
 
          </div>
@@ -127,7 +129,7 @@ class ResAppBar extends Component{
   destroyDrawer(){
       const {classes} = this.props
       return (
-        
+      <div>
       <AppBar className={this.props.classes.navbarcolor}>
         <Toolbar>
         <span><Image alt="Remy Sharp" height="70px" src={navImage}  /></span>
@@ -145,10 +147,17 @@ class ResAppBar extends Component{
              <StyledLink href="/regalar" >CARTÃO PRESENTE</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
+             <StyledLink href="#mainform">CONTACTO</StyledLink>
+            </Typography>
+            <Typography variant = "subheading" className = {classes.padding} color="inherit" >
+             <StyledLink href="#aulacont">AULA VIRTUAL</StyledLink>
+            </Typography>
+            <Typography variant = "subheading" className = {classes.padding} color="inherit" >
              <StyledLink href="/about" >QUEM SOMOS</StyledLink>
             </Typography>
         </Toolbar>
       </AppBar>
+      </div>
     )
   }
 

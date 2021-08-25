@@ -26,7 +26,6 @@ function sendEmail(e) {
     });
 } 
 
-    console.log(name + phone + mail)
     return (
 
          <div className="prodsignupSection">
