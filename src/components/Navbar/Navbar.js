@@ -127,6 +127,7 @@ class ResAppBar extends Component{
   destroyDrawer(){
       const {classes} = this.props
       return (
+        
       <AppBar className={this.props.classes.navbarcolor}>
         <Toolbar>
         <span><Image alt="Remy Sharp" height="70px" src={navImage}  /></span>

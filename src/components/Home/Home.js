@@ -187,7 +187,7 @@ const Home =  ()  => {
           <div  className = "instBanner">
           <h1 className = "instBanner_tittle">OVNI PARAPENTE</h1>
           <h2 className = "instBanner_subtittle" >FLORIPA</h2>
-          <p className = "instBanner_phrase">Realizando Sohnos desde 1974</p>
+          <p className = "instBanner_phrase">Realizando Sohnos desde 1994</p>
           <div className = "instBanner_social">
           <StyledLink href="https://www.facebook.com/ovniparapente/" target="_blank"><FacebookIcon className="fa fa-plus-circle" style={{ fontSize: 60 }}/></StyledLink>
           <StyledLink href="https://www.instagram.com/ovniparapenteoficial/" target="_blank" ><InstagramIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
@@ -246,7 +246,8 @@ const Home =  ()  => {
         </div>
 
         <div className="aulavirtual">
-        <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div> 
+        <div>O RESERVE SUA SALA DE AULA VIRTUAL GRATUITAMENTE</div>
+        <p>Nesta aula virtual você poderá esclarecer todas as suas dúvidas ou preocupações que aparecem na hora de escolher uma escola para se formar como piloto de Parapente.</p> 
         <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><StyledButtonaula>AULA VIRTUAL</StyledButtonaula></StyledLink>
         </div>
           <div
