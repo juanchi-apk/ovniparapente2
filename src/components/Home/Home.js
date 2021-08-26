@@ -19,6 +19,7 @@ import Faq from "../Faq/Faq";
 import Location from '../Location/Location';
 import {useMedia} from 'react-use';
 import CBVL_logo from '../../Images/logo_cbvl.png';
+import Testimonials from '../Testimonials/Testimonials';
 
 
 
@@ -250,30 +251,11 @@ const Home =  ()  => {
         <p>Nesta aula virtual você poderá esclarecer todas as suas dúvidas ou preocupações que aparecem na hora de escolher uma escola para se formar como piloto de Parapente.</p> 
         <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><StyledButtonaula>AULA VIRTUAL</StyledButtonaula></StyledLink>
         </div>
-          <div
-        className="video"
-        style={{
-          position: "relative",
-          paddingBottom: "56.25%" /* 16:9 */,
-          paddingTop: 25,
-          height: 0
-        }}                         
-      >
-        <iframe
-          style={{
-            position: "absolute",
-            top: 0,
-            left: "10.7%",
-            width: "80%",
-            height: "80%"
-          }}
-          title="instvideo"
-          src="https://www.youtube.com/embed/Y534Rxs0Ahw"
-          frameBorder="0"
-        />
-
-
-      </div>
+          <div className ="testimonial_main_container">
+          
+          <Testimonials/>
+          
+          </div>
           <Location/>
           <Faq/>
         </div>
@@ -344,31 +326,11 @@ const Home =  ()  => {
         <StyledLink href="https://landing.mailerlite.com/webforms/landing/e3t7o9" target= "_blank"><MobileStyledButtoninst>AULA VIRTUAL</MobileStyledButtoninst></StyledLink>
         </div>
        </div>
-          <div
-       className="video"
-       style={{
-         display:"flex",
-         justifyContent:"center",
-         position: "relative",
-         paddingBottom: "56.25%" /* 16:9 */,
-         paddingTop: 25,
-         height: 0
-       }}
-     >
-       <iframe
-         style={{
-           position: "absolute",
-           top: 0,
-           width: "80%",
-           height: "80%"
-         }}
-         title="instvideo"
-         src="https://www.youtube.com/embed/Y534Rxs0Ahw"
-         frameBorder="0"
-       />
-
-
-     </div>
+       <div className ="testimonial_main_container">
+          
+       <Testimonials/>
+       
+       </div>
           <Location/>
           <Faq/>
           </div>

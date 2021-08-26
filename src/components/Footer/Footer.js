@@ -65,7 +65,7 @@ const Footer =  ()=>{
                                     <StyledLink href="https://www.youtube.com/channel/UC8Dh9C_NI5boCxO5NLik0vQ/" target="_blank"   ><YouTubeIcon className="fa fa-plus-circle" style={{ fontSize: 30 }} /></StyledLink>
                               </div>
                               <div className="footer_copy_display">
-                                    <StyledLink href="https://simarketingparatodos.com/?v=04492b9b01cf">Copyright © 2021 Simarketingparatodos</StyledLink>
+                                    <StyledLink href="https://simarketingparatodos.com/?v=04492b9b01cf" target="_blank">Copyright © 2021 Simarketingparatodos</StyledLink>
                      
                               </div>
                         </div>
