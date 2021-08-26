@@ -11,8 +11,9 @@ const Testimonials = ()=> {
     return (
         <div >
         <h1 className="testimonials_title">DEPOIMENTOS</h1>
-        <div className ="testimonialContainer">
-        
+      
+      <div className ="testimonialContainer">
+      <div className ="video_container">  
       <Player
       fluid={false}
       width={270}
@@ -20,22 +21,27 @@ const Testimonials = ()=> {
         aspectRatio="9:16"
         src={testimonials_1}
       />
+      </div>
+      
+      <div className ="video_container">  
       <Player
       fluid={false}
       width={270}
       height={480}
-      aspectRatio="9:16"
+        aspectRatio="9:16"
+        src={testimonials_2}
+      />
+      </div>
 
-      src={testimonials_2}
-    />
-    <Player
-    fluid={false}
-    width={270}
-    height={480}
-    aspectRatio="9:16"
-
-    src={testimonials_3}
-  />
+      <div className ="video_container">  
+      <Player
+      fluid={false}
+      width={270}
+      height={480}
+        aspectRatio="9:16"
+        src={testimonials_3}
+      />
+      </div>
   </div>
   </div>
 
