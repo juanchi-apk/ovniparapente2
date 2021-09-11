@@ -21,6 +21,7 @@ const Testimonials = ()=> {
         aspectRatio="9:16"
         src={testimonials_1}
       />
+      <h3>Marcelo Mancini</h3>
       </div>
       
       <div className ="video_container">  
@@ -31,6 +32,7 @@ const Testimonials = ()=> {
         aspectRatio="9:16"
         src={testimonials_2}
       />
+      <h3>Malu Garcez</h3>
       </div>
 
       <div className ="video_container">  
@@ -41,6 +43,7 @@ const Testimonials = ()=> {
         aspectRatio="9:16"
         src={testimonials_3}
       />
+      <h3>Ana Garcez</h3>
       </div>
   </div>
   </div>

@@ -1,9 +1,8 @@
 .faqContainer{
-    background-color: #222222;
     padding:10px;
     h1{
         font-family: "Montserrat";
-        color:white;
+        color:#2C2C2C;
     }
 }
 .questioncontainer{
@@ -12,7 +11,7 @@
     justify-content: center;
     align-items: center;
     min-width: 90%;
-    color: #fff;
+    color: #2C2C2C;
 }
 .questionlist{
    color:#42f934;
@@ -24,7 +23,7 @@
     flex-flow: column nowrap;
     margin:20px;
     padding:10px;
-    width: 20vw;
+    min-width: 30vw;
     height: 20vw;
     min-height: 100px;
     border: 1px solid white;
@@ -51,7 +50,7 @@
         justify-content: center;
         align-items: center;
         width: 90%;
-        color: #fff;
+        color: #2C2C2C;
     }
 
     .questionitem{

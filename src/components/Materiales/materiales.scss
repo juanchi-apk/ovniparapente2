@@ -1,0 +1,16 @@
+.material_Container{
+
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 700px;
+    min-width:30% ;
+    margin:40px 0px 40px 0px;
+
+
+    h2{
+        font-family: "Montserrat";
+        font-weight: 800;
+    }
+}

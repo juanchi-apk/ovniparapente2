@@ -9,26 +9,28 @@ import { withStyles } from '@material-ui/core/styles';
 
 
 const StyledButtonProd = withStyles({
-    root: {
-        backgroundColor: "transparent",
-        borderRadius: 3,
-        border: "1px solid #0ed600 ",
-        color: '#0ed600', 
-      height: 48,
-      padding: '0 30px',
-      marginTop:'50px',
-      '&:hover' :{  
-        background: "#0ed600",
-        color: "white",
-        border: "1px solid white ",
+  root: {
+    background: 'transparent',
+    borderRadius: 3,
+    border: "2px solid #2c2c2c ",
+    color: '#2c2c2c',
+    fontWeight:"700",
+    fontFamily: "Montserrat",
+    height: 48,
+    padding: '0 30px',
+    marginTop:'50px',     
 
-      },     
-     
+    '&:hover' :{  
+      textDecoration:"none",
+      color: "#42f934",
+      border: "2px solid #42f934 ",
+
     },
-    label: {
-      textTransform: 'capitalize',
-    },
-  })(Button);
+  },
+  label: {
+    textTransform: 'capitalize',
+  },
+})(Button);
 
 
 const ProductCards = () => {
@@ -36,18 +38,18 @@ const ProductCards = () => {
 return (
     <div className  = "cardContainer">
     <div className="card transition">
-        <h2 className="transition">VOODUPLO<br/><small> Voa acompanhado por um instrutor habilitado! </small></h2>
-        <div className="cta-container transition"><Link href="/vooduplo" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
+        <h2 className="transition">VOO DUPLO INSTRUCIONAL<br/><small> Voo acompanhado por um instrutor habilitado.  </small></h2>
+        <div className="cta-container transition"><Link style={{textDecoration:"none"}} href="/vooduplo" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
         <div className="card_circle transition circle1"><Image src={image1} roundedCircle /></div>
     </div>
     <div className="card transition">
-        <h2 className="transition">CURSO PARAPENTE<br/><small>Curso tem duração em média de 40 horas</small></h2>
-        <div className="cta-container transition"><Link href="/curso" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
+        <h2 className="transition">CURSO PILOTO PARAPENTE<br/><small>Reconhecido pela Confederação Brasileira de Voo Livre (C.B.V.L.)</small></h2>
+        <div className="cta-container transition"><Link style={{textDecoration:"none"}} href="/curso" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
         <div className="card_circle transition circle2" ><Image src={image2} roundedCircle /></div>
     </div>          
     <div className="card transition">
-        <h2 className="transition">CARTÃO PRESENTE<br/><small>Compra un voo para tu amigo!</small></h2>
-        <div className="cta-container transition"><Link href="/regalar" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
+        <h2 className="transition">CARTÃO PRESENTE<br/><small>Presenteie alguém especial com um voo inesquecível!</small></h2>
+        <div className="cta-container transition"><Link style={{textDecoration:"none"}} href="/regalar" ><StyledButtonProd>SABER MAS</StyledButtonProd></Link></div>
         <div className="card_circle transition circle3" ><Image src={image3} roundedCircle /></div>
     </div>
     </div>

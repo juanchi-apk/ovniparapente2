@@ -39,7 +39,7 @@ const WhatsappContainer = () =>{
   <div className="whatsapp_container" >
   
   <div className ="whatsapp_cta">
-  AGENDE SEU VÔO HOJE E SINTA O PRAZER DE VOAR ENTRE AS NUVENS!
+  AGENDE SEU VÔO HOJE
   </div>  
     <WhatsAppIcon style={{ fontSize: 80 }}/> 
    

@@ -1,67 +1,58 @@
 import React from "react";
 import "./curso.scss";
-import Carousel from 'react-material-ui-carousel';
-import image1 from '../../Images/vooduplo4.jpg';
-import image2 from '../../Images/vooduplo.jpg';
-import image3 from '../../Images/vooduplo2.jpg';
-import image4 from '../../Images/vooduplo3.jpg';
 import Image from "react-bootstrap/Image";
-import ProdForm from '../ProdForm/ProdForm'
-import { withStyles } from '@material-ui/core/styles';
+import ContactForm from "../ContactForm/ContactForm";
 import backgroundImage from '../../Images/curso_form.jpg';
-import MobileForm from "../MobileForm/MobileForm"
-
-
+import image1 from '../../Images/slide_curso1.jpg';
+import image2 from '../../Images/slide_curso2.jpg';
+import image3 from '../../Images/slide_curso3.jpg';
+import image4 from '../../Images/slide_curso4.jpg';
 import {useMedia} from 'react-use';
+import Materiales from '../Materiales/Materiales';
+import Objetivos from "../Objetivos/Objetivos";
+import Fade from 'react-reveal/Fade';
+import Ovnicarrousel from "../../fragments/Ovnicarrousel";
 
 
-const StyledCarousel = withStyles({
-    root: {
-      color: 'white',
-      width:"100vw",
 
-     
-    },
-  })(Carousel);
 
 const CursoCont = ()=> {
 
     const isWide = useMedia('(min-width: 600px)');
     const isMobile =useMedia('(max-width: 599px)');
 
-var items= [
-    image3,
-    image1,
-    image4
     
-]
-
+      const items= [
+        image1,
+        image2,
+        image3,
+        image4
+        
+    ]
 
     return (
     <div>
         {isWide&& (<div className = "curso_container">
         <div className ="curso_gallery">   
-        <StyledCarousel> 
-                {items.map((item,i)=>{ return (
-                   <div className="photo_container"> 
-                   <Image style={{
-                        width: "100vw",
-                        }} src={item} alt={`curso${1}`}  fluid ></Image>
-                   </div>
-                    )
-                    })
-                }
-        </StyledCarousel>
+       
+        <Ovnicarrousel items={items}/>
+               
         </div>
 
         <div className = "curso_section">
 
-            <h2 className ="curso_title">CURSO PARAPENTE</h2>
-            <div className="curso_text">Curso de Piloto Solo de Parapente, tem duração em média de 40 horas, podendo variar por motivos climáticos e disponibilidade do aluno. O valor do curso é de R$3.900,00 com pagamento em até 6x sem juros nos cartões de crédito. Estão inclusos todo o material didático e de treino, não é necessário o aluno possuir nenhum tipo de equipamento inicial. Você receberá um certificado. depois de terminar seu curso.
+            <h2 className ="curso_title">CURSO PILOTO DE PARAPENTE</h2>
+            <div className="curso_text"><p>O Curso de PILOTO SOLO DE PARAPENTE, tem uma duração média de 40 horas entre prática e teoria, podendo variar por motivos climáticos e disponibilidade do aluno</p>
+                <p>O valor do curso é de R$3.900,00 com pagamento em até 6X sem juros no cartão de crédito ou boleto programado, ou até 12X com juros</p>
+                <p>Estão inclusos todo o material didático e de treino, não é necessário o aluno possuir nenhum tipo de equipamento inicial.</p>
+                <p>Uma vez finalizado o curso, você receberá um certificado da O.V.N.I. ESCOLA DE PARAPENTE, e iniciaremos o seu cadastro junto a Confederação Brasileira de Voo Livre (C.B.V.L.) para obter a sua carteira de habilitação válida para todo o território nacional em parceria com a FAI (International Aeronautical Federation) para voos internacionais. </p>
             </div>
         </div>
-        
-        <div className= "curso_FormContainer">
+        <Fade duration={2000} left distance="200px"  >
+                    <Materiales/>
+                    <Objetivos/>
+        </Fade> 
+        {/* <div className="curso_FormContainer">
         <img src={backgroundImage} className='img-fluid smallpic' alt='Sample' />
         <ProdForm/>
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
@@ -69,41 +60,29 @@ var items= [
         <div className='d-flex justify-content-center align-items-center h-100'> </div>
             
         </div>
-        </div>
+        </div> */}
+        <ContactForm/>
+
+                
     </div>
         )}
         {isMobile &&(
-            <div className = "vooduplo_container">
+            <div className = "curso_container">
             <div className ="vooDuplo_gallery">   
-                <StyledCarousel
-    
-    autoplay> 
-            {items.map((item,i)=>{ return (
-               <div className="photo_container"> 
-               <Image 
-               style={{
-                    width: "100vw",
-                    }}
-                src={item} 
-                alt={`vooduplo${1}`}/>
-                
-               </div>
-                )
-                })
-            }
-    </StyledCarousel>
+            <Ovnicarrousel items={items}/>
             </div>
             <div className = "mobile_curso_section">
-                <h1 className ="mobile_curso_title">CURSO PARAPENTE</h1>
+                <h1 className ="mobile_curso_title">CURSO PILOTO DE PARAPENTE</h1>
                 <div className="mobile_curso_text">
-                <p>Curso de Piloto Solo de Parapente, tem duração em média de 40 horas, podendo variar por motivos climáticos e disponibilidade do aluno.</p>
-                <p>O valor do curso é de R$3.900,00 com pagamento em até 6x sem juros nos cartões de crédito. Estão inclusos todo o material didático e de treino, não é necessário o aluno possuir nenhum tipo de equipamento inicial</p>
-                <p>Você receberá um certificado. depois de terminar seu curso.</p>
+                <p>O Curso de PILOTO SOLO DE PARAPENTE, tem uma duração média de 40 horas entre prática e teoria, podendo variar por motivos climáticos e disponibilidade do aluno</p>
+                <p>O valor do curso é de R$3.900,00 com pagamento em até 6X sem juros no cartão de crédito ou boleto programado, ou até 12X com juros</p>
+                <p>Estão inclusos todo o material didático e de treino, não é necessário o aluno possuir nenhum tipo de equipamento inicial.</p>
+                <p>Uma vez finalizado o curso, você receberá um certificado da O.V.N.I. ESCOLA DE PARAPENTE, e iniciaremos o seu cadastro junto a Confederação Brasileira de Voo Livre (C.B.V.L.) para obter a sua carteira de habilitação válida para todo o território nacional em parceria com a FAI (International Aeronautical Federation) para voos internacionais. </p>
                 </div>
             </div>
             <div className= "mobile_curso_FormContainer">
                 <Image src={backgroundImage} fluid />
-                <MobileForm/>
+                <ContactForm/>
             </div>
         </div>    
         )}

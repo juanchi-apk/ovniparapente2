@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import VooduploCont from "./components/Vooduplo/Vooduplo";
-import Faq from "./components/Faq/Faq";
 import Curso from "./components/Curso/Curso";
 import WhatsappContainer from './components/Whatsapp/Whatsapp'
+import AulaCont from './components/Aula/Aula'
 
 import Reservar from "./components/Reservar/Reservar";
 import About from "./components/About/About";
@@ -28,7 +28,8 @@ ReactDOM.render(
       <Route exact path="/"><App /></Route> 
       <Route path="/vooduplo"><VooduploCont /></Route>
       <Route path="/curso"><Curso /></Route>
-      <Route path="/regalar"><Reservar /></Route>
+      <Route path="/cartaopresente"><Reservar /></Route>
+      <Route path="/aula"><AulaCont /></Route>
       <Route path="/about"><About /></Route>
       </Switch>
       <Footer></Footer>

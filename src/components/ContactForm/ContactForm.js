@@ -3,9 +3,15 @@ import "./contactform.scss";
 import {setName, setMail ,setPhone} from '../../store/action';
 import { connect } from 'react-redux';
 import emailjs from 'emailjs-com';
+import Fade from 'react-reveal/Fade';
+
+
 
 
 const UserForm = ({onNameChange, onMailChange, onPhoneChange, name, phone , mail})=>   {
+
+ 
+
 const serviceid = "service_8qo0hym";
 const templateid= "template_gmy0i5j";
 const userid ="user_sw6HbUkKsPU1z6TnaKssN";
@@ -31,43 +37,18 @@ const userid ="user_sw6HbUkKsPU1z6TnaKssN";
 
     return (
 
-       /*  <div classNameName="formContainer">
-            <div classNameName="form_title">SE ATREVA A VOAR!
-</div>
-            <div classNameName="form_input-container">
-                <label  classNameName="form_placeholder">Nombre</label>
-                <input  classNameName="input" type="text" placeholder=" " />
-            </div>
-            <div classNameName="form_input-container">
-                <label  classNameName="form_placeholder">Apellido</label>
-                <input  classNameName="input" type="text" placeholder=" " />
-            </div>
-            <div classNameName="form_input-container">
-                <label  classNameName="form_placeholder">email</label>
-                <input  classNameName="input" type="text" placeholder=" " />
-            </div>
-            <div classNameName="form_input-container">
-                <label  classNameName="form_placeholder">telefono</label>
-                <input  classNameName="input" type="text" placeholder=" " />
-            </div>
-
-
-
-
-        </div> */
-
-        <div className="signupSection">
-        
+           <div className="signupSection">
+        <Fade duration={2000} left>
         <form onSubmit={sendEmail} className="signupForm" name="signupform">
           <h2>AGENDE SEU VÔO HOJE E SINTA O PRAZER DE VOAR!!</h2>
           <ul className="noBullet">
             <li>
               <label htmlFor="name"></label>
-              <input type="text" className="inputFields" id="from_name" placeholder="Name" name="from_name" onInput={(e) => onNameChange(e.target.value)} value={name} required></input>
+              <input type="text" className="inputFields" id="from_name" placeholder="Nome" name="from_name" onInput={(e) => onNameChange(e.target.value)} value={name} required></input>
             </li>
             <li>
               <label htmlFor="phone"></label>
-              <input type="name" className="inputFields" id="from_phone" name="from_phone" placeholder="Phone" onInput={(e) => onPhoneChange(e.target.value)} value={phone} required></input>
+              <input type="name" className="inputFields" id="from_phone" name="from_phone" placeholder="Telefone" onInput={(e) => onPhoneChange(e.target.value)} value={phone} required></input>
             </li>
             <li>
               <label htmlFor="email"></label>
@@ -75,13 +56,14 @@ const userid ="user_sw6HbUkKsPU1z6TnaKssN";
             </li>
             <li>
             <label htmlFor="message"></label>
-            <textarea className="inputFields" name="message" />
+            <textarea className="inputFields" name="messages" placeholder="Escreva Sua Mensagem..."/>
             </li>
             <li id="center-btn">
-              <input type="submit" id="join-btn" name="join" alt="Join" value="Join"/>
+              <input type="submit" id="join-btn" name="join" alt="Join" value="ENVIAR"/>
             </li>
           </ul>
         </form>
+        </Fade>
       </div>
               )
             }

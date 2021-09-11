@@ -1,44 +1,53 @@
 import React from "react";
 import "./about.scss";
-import Image from "react-bootstrap/Image";  
+import Image from "react-bootstrap/Image";
 import logonav from '../../Images/logodetalle.png';
 import Bulletnos from './Porquenos/Bulletnos';
-import ProdForm from '../ProdForm/ProdForm';
+import ContactForm from "../ContactForm/ContactForm";
+import Location from '../Location/Location';
+import certif from '../../Images/certificate.jpg';
 
 
 
 
-const About = ()=>{
-    return(
-        <div className="aboutContainer">
-        <Bulletnos></Bulletnos>
-        <div><Image src={logonav} alt="logonav" /></div>
-        <div className="aboutContainer_flexp">
-           <div className="wetitleItems">
-             <h1 className="wetitle" >QUEM SOMOS</h1>
-             <div className= "wetitle_text">Somos apaixonados por voo livre, pioneiros na modalidade e vendedores de sonhos. Amamos adrenalina e estamos há 25 anos praticando VOO LIVRE E PARAMOTOR no Brasil e no mundo. Com mais de 20 mil voos duplos realizados e mais de mil alunos de PARAPENTE E PARAMOTOR SOLO formados.</div>
-            </div>
-           <div>
-             <h1 className="wetitle">CURSO PILOTO PARAPENTE SOLO</h1>
-             <div className= "wetitle_text">O Curso de Piloto Solo de Parapente, tem duração em média de 40 horas, podendo variar por motivos climáticos e disponibilidade do aluno. O valor do curso é de R$3.900,00 com pagamento em até 6x sem juros nos cartões de crédito. Estão inclusos todo o material didático e de treino, não é necessário o aluno possuir nenhum tipo de equipamento inicial.</div>
+
+const About = () => {
+  return (
+    <div className="aboutContainer">
+      <div><Image src={logonav} alt="logonav" /></div>
+      <div className="aboutContainer_flexp">
+        <div className="wetitleItems">
+          <h2 className="wetitle" >QUEM SOMOS</h2>
+          <div className="wetitle_text"> Tudo começou lá pelo 1994, quando o Daivison "Moskito" Marques, instrutor da escola, entrou no mundo do voo livre, de asa delta naquela época. Com a chegada do parapente ele começou a incursionar nesta modalidade, trabalhando na testagem dos novos equipamentos.
+            Os anos foram passando e ele dedicou a sua vida à prática deste esporte, levando a sua paixão para mais de 35 países, abrindo novas rampas de decolagem em muitos deles.
+            Como todo grande voador, e sonhador, não ficou por aí. Pois ele também ama motores e velocidade, se tornando um grande piloto de Paramotor, Paratrike e agora também Trike (asa delta motorizado).
+            Com mais de 20.000 voos duplo realizados e centenas de alunos formados ao redor do mundo, hoje a O.V.N.I. ESCOLA DE PARAPENTE é uma grande família.
+            Somos apaixonados por voo, pioneiros na modalidade e realizadores de sonhos. Amamos adrenalina e queremos levar essa sensação até você
           </div>
-          <div>
-            <h1 className="wetitle" >VOO DE PARAPENTE DUPLO</h1>
-            <div className= "wetitle_text">É chamado de VOO DUPLO porque o passageiro é acompanhado por um instrutor habilitado, quem será o responsável pela pilotagem do PARAPENTE. Voamos todos os dias, sempre dependendo das condições climáticas. Às 13:00 horas (aproximadamente), inicia a subida para a rampa de decolagem, a pé ou caminhonete 4X4. A escolha da rampa será conforme a direção do vento. A duração do voo tem uma média de 15 a 20 minutos no ar, fora o tempo percorrido da trilha para chegar na rampa de decolagem. Todo o passeio tem duração aproximada de um hora e meia. Os voos são realizados quase sempre na Praia Brava. Em alguns casos por motivo de direção do vento, os voos são realizados na Praia do Santinho.</div> 
+
+          
+        </div>
+        
+        <div style={{width:"40%", textAlign:"center" ,margin:"30px 0px"}}>
+          <Image src={certif} fluid/>
           </div>
-          <div>
-           <h1 className="wetitle" >Cursos e venda de equipamentos no Brasil e no mundo</h1>
-            <div className= "wetitle_text"> Oferecemos Cursos Para Pilotos Nível 1, 2 y 3. Voo Duplo Instrucional, Voo de Paramotor, Propaganda Aérea, Equipamentos entre outros serviços. Com instrutor experiente e habilitado pela CBVL (Confederação Brasileira de Voo Livre. </div>
-          </div> 
-         
-         </div>
-            
-           <ProdForm></ProdForm>
-      
-      
+        <div className="wetitleItems">
+          <h2 className="wetitle" >CURSOS E VENDA DE EQUIPAMENTOS NO BRASIL E NO MUNDO</h2>
+          <div className="wetitle_text"> Oferecemos Cursos Para Pilotos Nível 1, 2 y 3. Voo Duplo Instrucional, Voo de Paramotor, Propaganda Aérea, Equipamentos entre outros serviços. Com instrutor experiente e habilitado pela CBVL (Confederação Brasileira de Voo Livre. </div>
+        </div>
+        <Bulletnos ></Bulletnos>
+
       </div>
 
-      )
+
+      <Location />
+      <ContactForm />
+
+
+
+    </div>
+
+  )
 
 }
 

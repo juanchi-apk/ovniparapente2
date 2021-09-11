@@ -34,19 +34,19 @@ const MobileForm = ({onNameChange, onMailChange, onPhoneChange, name, phone , ma
         <form onSubmit={sendEmail} className="mobile_signupForm" name="signupform">
           <h2 className = "formtittle">AGENDE SEU VÔO HOJE E SINTA O PRAZER DE VOAR!!</h2>
             <div>        
-                <input type="text" className="mobile_inputFields" id="name" placeholder="Name" name="from_name" onInput={(e) => onNameChange(e.target.value)} value={name} required></input>
+                <input type="text" className="mobile_inputFields" id="name" placeholder="Nome" name="from_name" onInput={(e) => onNameChange(e.target.value)} value={name} required></input>
             </div>
             <div>
-                <input type="name" className="mobile_inputFields" id="phone" name="from_phone" placeholder="Phone" onInput={(e) => onPhoneChange(e.target.value)} value={phone} required></input>
+                <input type="name" className="mobile_inputFields" id="phone" name="from_phone" placeholder="Telefone" onInput={(e) => onPhoneChange(e.target.value)} value={phone} required></input>
             </div>
             <div>
                 <input type="email" className="mobile_inputFields" id="email" name="from_email" placeholder="Email" onInput={(e) => onMailChange(e.target.value)} value={mail} required></input>
             </div>
             <div>
-            <textarea className="prodinputFields" placeholder="Leave a Message" name="message" />
+            <textarea className="prodinputFields" placeholder="Escreva Sua Mensagem..." name="message" />
             </div>
             <div id="center-btn">
-              <input type="submit" id="join-btn" name="join" alt="Join" value="Join"/>
+              <input type="submit" id="join-btn" name="join" alt="Join" value="Enviar"/>
             </div>
         </form>
       </div>

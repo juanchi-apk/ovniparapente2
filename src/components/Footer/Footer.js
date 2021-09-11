@@ -13,9 +13,9 @@ const Footer =  ()=>{
       const StyledLink = withStyles({
             root: {
               background: 'transparent',
-              color: '#ffffff',
+              color: '#2c2c2c',
               '&:hover' :{  
-                color: "#2c2c2c",
+                color: "#42f934",
                 textDecoration:"none",
               },
              
@@ -32,7 +32,9 @@ const Footer =  ()=>{
                               <div className="footer_columns_item">
                                     <div className= "footer_inst_adress">
                                           <h3>QUEM SOMOS</h3>
-                                          <p>Somos apaixonados por voo livre, pioneiros na modalidade e vendedores de sonhos.</p>
+                                          <p>Somos apaixonados por voo livre, pioneiros na modalidade e realizadores de sonhos.
+Com mais de 25 anos de experiência, e milhares de voos realizados no Brasil e outros países do mundo, trazemos até você a adrenalina de voar com toda a segurança e técnica que caracterizam a nossa escola. 
+</p>
                                     </div>
    
                               </div>
@@ -41,19 +43,21 @@ const Footer =  ()=>{
                                           <h3>MAPA DO SITE</h3>
                                           <div  className="footer_mapa_do_site">
                                                 <StyledLink href="/">Home</StyledLink>
-                                                <StyledLink href="/vooduplo">Voo Duplo</StyledLink>
-                                                <StyledLink href="/curso">Curso</StyledLink>
-                                                <StyledLink href="/regalar">Carta Regalo</StyledLink>
-                                                <StyledLink href="/about">Quem Somos</StyledLink>
+                                                <StyledLink href="/vooduplo">Voo Duplo Instrucional</StyledLink>
+                                                <StyledLink href="/curso">Curso Piloto de Parapente</StyledLink>
+                                                <StyledLink href="/cartaopresente">Cartâo Presente</StyledLink>
+                                                <StyledLink href="/#aulacont">Aula Experimental</StyledLink>
+                                                <StyledLink href="/about">Contato</StyledLink>
+
                                           </div>
                                     </div>
                               </div>
                               <div className="footer_columns_item">
                                     <div className= "footer_inst_adress">
                                           <h3>LOCALIZAÇÃO</h3>
-                                          <p>Servidão Novas Palmeiras, 1414 - Ingleses do Rio Vermelho, Florianópolis - SC, 88060-208. </p>
-                                          <p>Horário de segunda a domingo, das 11:00h às 19:30h</p>
-                                          <p>Tel: +55 48 9985-8393</p>
+                                          <p>Servidão Novas Palmeiras, 1414 - Rio Vermelho, Florianópolis - SC, 88060-208. </p>
+                                          <p>Horário de atendimento: Segunda a domingo, das 10:00h às 20:30h</p>
+                                          <p>Tel: +55 48 99985-8393     s</p>
                                     </div>
    
                               </div>

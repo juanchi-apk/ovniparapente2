@@ -8,7 +8,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import image1 from '../../Images/vooduplo2.jpg';
-import Image from "react-bootstrap/Image";
 import image2 from '../../Images/cursoparapente.jpg';
 import image3 from '../../Images/regalar.jpg';
 import {Button, Link} from "@material-ui/core";

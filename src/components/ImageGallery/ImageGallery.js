@@ -59,7 +59,7 @@ allowFullScreen ={false}></iframe>
        <StyledGallery>
         {items.map((item,i)=>{ return (
             <div className="mobile_gallery"> 
-                <iframe style ={{width:"100%"}} src={item} type="video/mp4" frameBorder="0"></iframe>
+                <iframe style ={{width:"100%"}} title={`video${i}`} src={item} type="video/mp4" frameBorder="0"></iframe>
             </div>
 
             )}

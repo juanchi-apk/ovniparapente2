@@ -1,84 +1,39 @@
 import React from "react";
 import "./bulletnos.scss";
-import Carousel from 'react-material-ui-carousel';
-import { withStyles } from '@material-ui/core/styles';
+import BulletItem from "../../../fragments/Bullet";
 
 
 
 
 const BulletAbout = ()=>{
 
-    const StyledCarousel = withStyles({
-        root: {
-          width:"100vw",
-          items:2,
-          marginLeft:"auto",
-          marginRight:"auto",
+   
+        const faqItems = [
+            "PROFISSIONALISMO: Temos os recursos, o conhecimento, a experiência e a predisposição para que passeio ou curso seja inesquecível.",
+            "PAIXÃO: Porque amamos o que fazemos",
+            "FACILITAMOS: Disponibilizamos diversas formas de pagamento.",
+            "SEGURANÇA: Mesmo sendo um esporte radical, contamos com a técnica, experiência e conhecimento que adquirimos durante uma vida dedicada ao voo livre.",
+            "LOCALIZAÇÃO: Nossa escola está num ponto privilegiado e estratégico para quem vem aprender a voar ou curtir umas férias em Florianópolis",
+            'INFRAESTRUTURA: Temos um SIMULADOR de VOO especificamente projetado para treinar a "Força G", técnicas de decolagem e pouso.',
+            "TRANSPARÊNCIA: Se no dia da sua reserva as CONDIÇÕES CLIMÁTICAS não forem favoráveis,  você poderá alterar a data ou solicitar o estorno da sua compra.",
+            "COMPROMISSO: Profissionais altamente qualificados e experientes para fazer desta experiência, a melhor de todas!"
+        ];
     
-          },
-      })(Carousel);
-
-
-    return(
-        <div className ="bulletContainer">
-            <h1>PREGUNTAS FRECUENTES</h1>
-            <div className = "reasoncontainer">
-
-            <StyledCarousel
+        return (
+            < div className ="material_Container">
+            <h2>POR QUE ESCOLHERNOS?</h2>
+                {faqItems.map((faqItem, i) => {
+                    return (
+                        <div key={i}>
+                            <BulletItem content={faqItem} />
+                        </div>
+                    )
+                })}
+    
+            </div>
+    
+    
         
-            autoplay
-            animation="slide"> 
-            <div className = "bulletCarousel">
-                <div className = "bulletitem">
-                    <div className= "bulletlist">PROFISSIONALISMO</div>
-                    <div>emos os recursos, o conhecimento, a experiência e a predisposição para que você tenha o melhor dia da sua vida.</div>
-                </div>          
-                <div className = "bulletitem">
-                    <div className= "bulletlist">PAIXÃO</div>
-                    <div>porque amamos o que fazemos</div>
-                </div>
-                <div className = "bulletitem">
-                    <div className= "bulletlist">FLEXIBILIDADE</div>
-                    <div>oferecemos diferentes meios de pagamento</div> 
-                </div>
-            </div>
-            <div className = "bulletCarousel">
-               
-                <div className = "bulletitem">
-                    <div className= "bulletlist">SEGURANÇA</div>
-                    <div>primeiro é preciso esclarecer que não é um esporte de risco.</div>
-                </div>
-                <div className = "bulletitem">
-                    <div className= "bulletlist">LOCALIZAÇÃO</div>
-                    <div>A escola está em um lugar privilegiado e estratégico pra quem quer aprender ou vir voar em Florianópolis</div>
-                </div>  
-                <div className = "bulletitem">
-                    <div className= "bulletlist">INFRAESTRUTURA</div>
-                    <div>Em nossa escola temos um simulador especificamente projetada pensando em você para você primeiro praticar no chão</div>
-                </div>
-            </div>
-            <div className = "bulletCarousel">
-                <div className = "bulletitem">
-                    <div className= "bulletlist">TRANSPARÊNCIA</div>
-                    <div>Se no dia da sua reserva as condições do voo não forem boas. Avisaremos, para que decida se deseja voar  ou se prefere alterar o dia da reserva</div>
-                </div>
-                <div className = "bulletitem">
-                    <div className= "bulletlist">COMPROMISSO </div>
-                    <div>Profissionais altamente qualificados e experientes para tornar sua experiência única.</div>
-                </div>
-                
-            </div>
-            
-           
-        
-                    
-            </StyledCarousel>
-
-                
-                 
-            </div>
-
-        </div>
 
     )
 

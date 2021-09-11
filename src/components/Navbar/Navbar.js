@@ -5,13 +5,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   AppBar, Toolbar, Typography, List, ListItem,
-  withStyles, Grid, SwipeableDrawer, Link, Avatar
+  withStyles, Grid, SwipeableDrawer, Link
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import zIndex from '@material-ui/core/styles/zIndex';
 import navImage from "../../Images/logodetalle.png"    ;
 import Image from "react-bootstrap/Image";  
-
+import './navbar.scss'
 
 
 const styleSheet = {
@@ -27,25 +26,25 @@ const styleSheet = {
 
   sideBarIcon : {
     padding : 0,
-    color : '#42f934',
+    color : '#2c2c2c',
     cursor : "pointer",
   },
 
   navbarcolor :{
     backgroundColor:"#FFFFFF",
-  height: "80x",
+  height: "90x",
 zIndex:"50"}
 }
 
 const StyledLink = withStyles({
   root: {
-    color: '#42f934',
+    color: '#2c2c2c',
 
     transform:"1s background-color",
     '&:hover' :{  
-      color: "#ffffff",
+      color: "#42f934",
       textDecoration:"none",
-      background:"#42f934"
+      
 
     },     
 
@@ -112,10 +111,9 @@ class ResAppBar extends Component{
                <ListItem key = {1} button divider> <StyledLink href="/">HOME</StyledLink></ListItem>
                <ListItem key = {2} button divider> <StyledLink href="/vooduplo">VOO DUPLO</StyledLink> </ListItem>
                <ListItem key = {3} button divider> <StyledLink href="/curso">CURSO</StyledLink> </ListItem>
-               <ListItem key = {4} button divider> <StyledLink href="/regalar">CARTÃO PRESENTE</StyledLink> </ListItem>
-               <ListItem key = {5} button divider> <StyledLink href="#aulacont">AULA VIRTUAL</StyledLink> </ListItem>
-               <ListItem key = {6} button divider> <StyledLink href="#mainform">CONTACTO</StyledLink> </ListItem>
-               <ListItem key = {7} button divider> <StyledLink href="/about">QUEM SOMOS</StyledLink> </ListItem>
+               <ListItem key = {4} button divider> <StyledLink href="/cartaopresente">CARTÃO PRESENTE</StyledLink> </ListItem>
+               <ListItem key = {5} button divider> <StyledLink href="/aula">AULA EXPERIMENTAL</StyledLink> </ListItem>
+               <ListItem key = {6} button divider> <StyledLink href="/about">CONTATO</StyledLink> </ListItem>
              </List>
 
          </div>
@@ -132,7 +130,7 @@ class ResAppBar extends Component{
       <div>
       <AppBar className={this.props.classes.navbarcolor}>
         <Toolbar>
-        <span><Image alt="Remy Sharp" height="70px" src={navImage}  /></span>
+        <span id="marginspan"><Image alt="Remy Sharp" height="80px" src={navImage}/></span>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" ></Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
               <StyledLink href="/" >HOME</StyledLink>
@@ -144,16 +142,13 @@ class ResAppBar extends Component{
               <StyledLink href="/curso" >CURSO</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-             <StyledLink href="/regalar" >CARTÃO PRESENTE</StyledLink>
+             <StyledLink href="/cartaopresente" >CARTÃO PRESENTE</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-             <StyledLink href="#mainform">CONTACTO</StyledLink>
+             <StyledLink href="/aula">AULA EXPERIMENTAL</StyledLink>
             </Typography>
             <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-             <StyledLink href="#aulacont">AULA VIRTUAL</StyledLink>
-            </Typography>
-            <Typography variant = "subheading" className = {classes.padding} color="inherit" >
-             <StyledLink href="/about" >QUEM SOMOS</StyledLink>
+             <StyledLink href="/about" >CONTATO</StyledLink>
             </Typography>
         </Toolbar>
       </AppBar>

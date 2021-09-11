@@ -2,8 +2,7 @@ import React from "react";
 import "./faq.scss";
 import Carousel from 'react-material-ui-carousel';
 import { withStyles } from '@material-ui/core/styles';
-
-
+    
 
 
 const Faq = ()=>{
@@ -28,43 +27,43 @@ const Faq = ()=>{
             animation="slide"> 
             <div className = "frecuentCarousel">
                 <div className = "questionitem">
-                    <div className= "questionlist">QUE EU DEVO VESTIR?</div>
-                    <div>Recomenda-se usar roupas adaptadas ao clima. É importante usar sapatos firmes e roupas  confortáveis. O restante do material necessário para o voo (capacete, etc.) será fornecido pelo piloto.</div>
+                    <div className= "questionlist">O QUE DEVO VESTIR?</div>
+                    <div>Recomenda-se usar roupas leves, tipo esportivas. É importante o uso de calçado fechado. Os itens de segurança, como capacete, serão fornecidos pela escola.</div>
                 </div>          
                 <div className = "questionitem">
-                    <div className= "questionlist">POSSO USAR ÓCULOS DURANTE O VÔO?</div>
-                    <div>Não há problema em usar óculos durante o vôo. Se estiver ensolarado, recomendamos especialmente o uso de óculos escuros.</div>
+                    <div className= "questionlist">POSSO USAR ÓCULOS DURANTE O VOO?</div>
+                    <div>Não há problema em usar óculos durante o voo.</div>
                 </div>
                 <div className = "questionitem">
-                    <div className= "questionlist">POSSO LEVAR UM TELEFONE CELULAR?</div>
-                    <div>Sim, claro. sem problemas?</div> 
+                    <div className= "questionlist">COMO FUNCIONA O ALUGUEL DA CÂMERA GOPRO?</div>
+                    <div>Pelo valor de R$80,00 registramos seu voo com a nossa câmera GoPro e transferimos o vídeo para seu telefone ou posteriormente por e-mail.</div> 
                 </div>
             </div>
             <div className = "frecuentCarousel">
                
                 <div className = "questionitem">
-                    <div className= "questionlist">COMO RECEBO MEU VÍDEO?</div>
-                    <div>Temos uma câmera GO-PRO, podemos registrar sua experiência, editá-la e enviá-la a você por um preço de XXX</div>
+                    <div className= "questionlist">POSSO LEVAR MEU TELEFONE CELULAR?</div>
+                    <div>Sim, claro! Ótima opção se não for adquirido o serviço de aluguel de câmera GoPro.</div>
                 </div>
                 <div className = "questionitem">
-                    <div className= "questionlist">COM QUE IDADE PODE SER FEITO UM VÔO?</div>
-                    <div>A partir dos 5 anos você pode voar se tiver o consentimento dos pais; no entanto, um peso mínimo de 20 kg é um requisito essencial.</div>
+                    <div className= "questionlist">QUAL A IDADE MÍNIMA PARA FAZER UM VOO?</div>
+                    <div>Não é por idade e sim por peso, aproximadamente entre 25/30 quilos. Menores de 18 anos poderão realizar a atividade com termo de responsabilidade assinado pelo responsável legal.</div>
                 </div>  
                 <div className = "questionitem">
                     <div className= "questionlist">QUAL É O PESO MÁXIMO PARA UM VOO?</div>
-                    <div>Você pode pesar 110 Kg que continuaríamos dentro da faixa de peso aprovada para o parapente</div>
+                    <div>Até uns 115 quilos aproximadamente, sempre dependendo das condições climáticas no dia do voo.</div>
                 </div>
             </div>
             <div className = "frecuentCarousel">
                 <div className = "questionitem">
-                    <div className= "questionlist">ESTAMOS COBERTOS POR UM SEGURO?</div>
-                    <div>Temos seguro xxxx que cobre o passageiro e terceiros </div>
+                    <div className= "questionlist">EESTAMOS COBERTOS POR ALGUMA SEGURADORA?</div>
+                    <div>Sim. Contamos com a cobertura da seguradora "PORTO SEGURO CIA DE SEGUROS" 
+                    Corretora: "GIE CORRETORA DE SEGUROS LTDA"
+                    </div>
                 </div>
                 <div className = "questionitem">
                     <div className= "questionlist">EU PRECISO DE ALGUM CONHECIMENTO PRÉVIO?</div>
-                    <div>Nenhuma experiência anterior é necessária. Você só precisará correr alguns metros para decolar com seu instrutor.
-                    Recomendamos que você use roupas e sapatos confortáveis.
-                    Nos Cuidamos de todo o resto
+                    <div>Você não precisa ter nenhuma experiência prévia, nós iremos disponibilizar a introdução teórica e a nossa equipe acompanhará você desde o começo até o fim do passeio.
                     </div>
                 </div>
                 
@@ -77,8 +76,8 @@ const Faq = ()=>{
 
                 
                  <div className="faqInfo">
-                     <p>Duração do vôo: entre 10 e 25 minutos.</p>
-                    <p>A EMPRESA SE RESERVA: o direito de cancelar o voo duplo de parapente, alterar ou mudar o local de decolagem, a data e o horário do serviço  por razões de força maior ou para o melhor desempenho da prática deste esporte.
+                     <p>Duração do voo: em média de 15/20 minutos aproximadamente, conforme o vento na hora do voo. </p>
+                    <p>A EMPRESA SE RESERVA: o direito de cancelar o voo duplo instrucional, alterar ou mudar o local de decolagem, a data e o horário do serviço por razões de força maior ou para melhor desempenho da prática deste esporte.
                     </p>
                 </div>
             </div>

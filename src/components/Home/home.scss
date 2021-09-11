@@ -88,9 +88,11 @@
   }
 
   .inst{
+    margin-top:40px;
+    margin-bottom: 40px;
     width:"100%";
   display:flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   align-items: center;
   min-height: 500px;
   background-color: #ffffff;
@@ -107,7 +109,7 @@
   
   .institem {
     width:70%;
-    padding: 30px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,12 +233,11 @@
 }
   
 .aulavirtual{
-  
-    background-color: #222222;
+  margin:70px 0px;
     padding:10px;
-    color:#ffffff;
     font-family: "Montserrat";
     font-size:26px;
+    
     p{
       font-size:14px;
       font-weight: 400;
@@ -245,10 +246,9 @@
 }
 
 .mobile_aulavirtual{
-  
-  background-color: #222222;
+
   padding:10px;
-  color:#ffffff;
+  color:#2c2c2c;
   font-family: "Montserrat";
   font-size:26px;
   width:100%;

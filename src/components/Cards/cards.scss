@@ -31,18 +31,19 @@
   
   .card_circle {
     height: 500px;
-    width: 450px;
+    width: 550px;
     background: no-repeat;
     background-size: cover;
     position: absolute;
     border-radius: 50%;
     margin-left: -75px;
-    margin-top: -270px;
+    margin-top: -150px;
   }
   
   .card:hover .card_circle {
     border-radius: 0;
-    margin-top: -130px;
+    margin-top: -70px;
+    opacity: 0.6;
   }
   
   .card h2 {
@@ -59,16 +60,21 @@
   .card h2 small {
     font-weight: normal;
     font-size: 65%;
-    color: rgba(0,0,0,0.5);
+    color: #2c2c2c;
 }
   
   .card:hover h2 {
     margin-top: 100px;
-    color: #fff;
+    color: #2c2c2c;
   }
-  
+ 
   .card:hover h2 small {
-    color: #fff;
+    color: #2c2c2c;
+
+  }
+
+  .card:hover small{
+    font-weight: 600;
   }
   
   .cta-container {

@@ -35,11 +35,11 @@ function sendEmail(e) {
           <ul className="prodnoBullet">
             <li>
               <label htmlFor="name"></label>
-              <input type="text" className="prodinputFields" id="from_name" placeholder="Name" name="from_name" onInput={(e) => onNameChange(e.target.value)} value={name} required></input>
+              <input type="text" className="prodinputFields" id="from_name" placeholder="Nome" name="from_name" onInput={(e) => onNameChange(e.target.value)} value={name} required></input>
             </li>
             <li>
               <label htmlFor="phone"></label>
-              <input type="name" className="prodinputFields" id="from_phone" name="from_phone" placeholder="Phone" onInput={(e) => onPhoneChange(e.target.value)} value={phone} required></input>
+              <input type="name" className="prodinputFields" id="from_phone" name="from_phone" placeholder="Telefone" onInput={(e) => onPhoneChange(e.target.value)} value={phone} required></input>
             </li>
             <li>
               <label htmlFor="email"></label>
@@ -47,10 +47,10 @@ function sendEmail(e) {
             </li>
             <li>
             <label htmlFor="message"></label>
-            <textarea className="prodinputFields" placeholder="Leave a Message" name="message" />
+            <textarea className="prodinputFields"  placeholder="Escreva Sua Mensagem..." name="message" />
             </li>
             <li id="prodcenter-btn">
-              <input type="submit" id="prodjoin-btn" name="join" alt="Join" value="Join"/>
+              <input type="submit" id="prodjoin-btn" name="join" alt="Join" value="Enviar"/>
             </li>
           </ul>
         </form>
