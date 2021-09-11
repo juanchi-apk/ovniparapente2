@@ -1,11 +1,14 @@
-.bullet_container{
-    display : flex;
-    flex-flow: row nowrap;
-    width : 400px;
-    min-width: 30%;
-    margin:20px 0px;
 
-    .bullet_text{
-        padding-left:80px;
+
+@media (max-width: 600px) {
+    .bullet_container{
+        display : flex;
+        flex-flow: row nowrap;
+                    
+        margin:20px 0px;
+    
+        .bullet_text{
+            padding-left:40px;
+        }
     }
 }

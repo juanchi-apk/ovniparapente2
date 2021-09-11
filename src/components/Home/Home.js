@@ -73,11 +73,11 @@ const Home = () => {
     root: {
       background: 'transparent',
       borderRadius: 3,
-      border: "1px solid #0ed600 ",
-      color: '#0ed600',
+      border: "1px solid #2c2c2c ",
+      color: '#2c2c2c',
       height: 30,
       marginTop: '50px',
-
+      fontFamily:"Montserrat",
 
     },
     label: {
@@ -110,6 +110,7 @@ const Home = () => {
     <div>
       {isWide && (
         <div>
+
           <section>
             <div className="carousel">
               <div className="instBanner">
@@ -182,16 +183,7 @@ const Home = () => {
       {isMobile && (
         <div >
           <div className="mobile_carousel">
-            {/*  <div  className = "mobile_instBanner">
-         <h1 className = "mobile_instBanner_tittle">OVNI PARAPENTE</h1>
-         <h2 className = "mobile_instBanner_subtittle" >FLORIPA</h2>
-         <p className = "mobile_instBanner_phrase">Realizando Sohnos</p>
-         <div className = "mobile_instBanner_social">
-         <StyledLink href="https://www.facebook.com/ovniparapente/" target="_blank"><FacebookIcon className="fa fa-plus-circle" style={{ fontSize: 60 }}/></StyledLink>
-         <StyledLink href="https://www.instagram.com/ovniparapenteoficial/" target="_blank" ><InstagramIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
-         <StyledLink href="https://www.youtube.com/channel/UC8Dh9C_NI5boCxO5NLik0vQ/" target="_blank"   ><YouTubeIcon className="fa fa-plus-circle" style={{ fontSize: 60 }} /></StyledLink>
-         </div>
-         </div>  */}
+            
             <Ovnicarrousel items={items}></Ovnicarrousel>
           </div>
           <div className="mobile_inst">

@@ -19,8 +19,9 @@ const StyledButtonProd = withStyles({
     root: {
         backgroundColor: "transparent",
         borderRadius: 3,
-        border: "1px solid #0ed600 ",
-        color: '#0ed600', 
+        border: "1px solid #2c2c2c ",
+        color: '#2c2c2c', 
+        fontFamily:"Montserrat",
       height: 40,
       padding: '0px 30px',
       marginTop:'10px',
@@ -64,12 +65,12 @@ const ProductCards = () => {
               VOODUPLO
               </div>
               <Typography variant="body2" color="textSecondary" component="p">
-              Voa acompanhado por um instrutor habilitado!
+              Voo acompanhado por um instrutor habilitado.
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-           <div className="card_btn"> <Link href="/vooduplo"><StyledButtonProd>Saber Mais</StyledButtonProd></Link></div>
+           <div className="card_btn"> <Link href="/vooduplo"><StyledButtonProd>SABER MAIS</StyledButtonProd></Link></div>
            
           </CardActions>
         </Card>
@@ -86,12 +87,12 @@ const ProductCards = () => {
             CURSO PARAPENTE
             </div>
               <Typography variant="body2" color="textSecondary" component="p">
-              Curso tem duração em média de 40 horas
+              Reconhecido pela Confederação Brasileira de Voo Livre (C.B.V.L.)
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <div className="card_btn"><Link href="/curso"><StyledButtonProd>Saber Mais</StyledButtonProd></Link></div>
+          <div className="card_btn"><Link href="/curso"><StyledButtonProd>SABER MAIS</StyledButtonProd></Link></div>
           </CardActions>
         </Card>
         <Card className={classes.root}>
@@ -106,33 +107,17 @@ const ProductCards = () => {
             CARTÃO PRESENTE
             </div>
               <Typography variant="body2" color="textSecondary" component="p">
-              Compra un voo para tu amigo!
+              Presenteie alguém especial com um voo inesquecível!
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <div className="card_btn"><Link href="/regalar"><StyledButtonProd>Saber Mais</StyledButtonProd></Link></div>
+          <div className="card_btn"><Link href="/regalar"><StyledButtonProd>SABER MAIS</StyledButtonProd></Link></div>
           </CardActions>
         </Card>
       
         </div>
-   /* { <div className  = "mobile_cardContainer">
-    <div className="mobile_card transition">
-        <h2 >VOODUPLO<br/><small> Voa acompanhado por um instrutor habilitado! </small></h2>
-        <div className="mobile_cta-container"><Link href="/vooduplo" ><StyledButtonProd>Button</StyledButtonProd></Link></div>
-        <div className="mobile_card_circle circle1"><Image src={image1} roundedCircle /></div>
-    </div>
-    <div className="mobile_card transition">
-        <h2 className="transition">CURSO PARAPENTE<br/><small>Curso tem duração em média de 40 horas</small></h2>
-        <div className="mobile_cta-container"><Link href="/curso" ><StyledButtonProd>Button</StyledButtonProd></Link></div>
-        <div className="mobile_card_circle circle2" ><Image src={image2} roundedCircle /></div>
-    </div>          
-    <div className="mobile_card transition">
-        <h2 className="transition">REGALAR<br/><small>Compra un voo para tu amigo!</small></h2>
-        <div className="mobile_cta-container"><Link href="/regalar" ><StyledButtonProd>Button</StyledButtonProd></Link></div>
-        <div className="mobile_card_circle circle3" ><Image src={image3} roundedCircle /></div>
-    </div>
-    </div>} */
+  
 )
 } 
 

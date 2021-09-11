@@ -1,12 +1,15 @@
 import React from "react";
 import "./bulletnos.scss";
 import BulletItem from "../../../fragments/Bullet";
+import {useMedia} from 'react-use';
 
 
 
 
 const BulletAbout = ()=>{
 
+    const isWide = useMedia('(min-width: 600px)');
+    const isMobile = useMedia('(max-width: 599px)');
    
         const faqItems = [
             "PROFISSIONALISMO: Temos os recursos, o conhecimento, a experiência e a predisposição para que passeio ou curso seja inesquecível.",
@@ -20,7 +23,8 @@ const BulletAbout = ()=>{
         ];
     
         return (
-            < div className ="material_Container">
+            <div>
+            {isWide && (< div className ="material_Container">
             <h2>POR QUE ESCOLHERNOS?</h2>
                 {faqItems.map((faqItem, i) => {
                     return (
@@ -28,10 +32,29 @@ const BulletAbout = ()=>{
                             <BulletItem content={faqItem} />
                         </div>
                     )
-                })}
+                })
+                }
+
+
     
+            </div>)}
+            {isMobile && (< div className ="mobile_material_Container">
+            <h2>POR QUE ESCOLHERNOS?</h2>
+                {faqItems.map((faqItem, i) => {
+                    return (
+                        <div key={i}>
+                            <BulletItem content={faqItem} />
+                        </div>
+                    )
+                })
+                }
+
+
+    
+            </div>)}
+
+
             </div>
-    
     
         
 

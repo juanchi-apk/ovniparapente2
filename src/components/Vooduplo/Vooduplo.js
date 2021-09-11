@@ -46,13 +46,7 @@ const VooduploCont = ()=> {
                     </div>
                 </div>
                 
-                {/* <div className= "vooduplo_FormContainer">
-                    <img src={backgroundImage} className='img-fluid smallpic' alt='Sample' />
-                    <ProdForm/>
-                    <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-                        <div className='d-flex justify-content-center align-items-center h-100'></div>
-                    </div>
-                </div> */}
+                
                 <ContactForm/>
             
             

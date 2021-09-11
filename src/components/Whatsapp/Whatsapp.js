@@ -53,7 +53,7 @@ const WhatsappContainer = () =>{
   <div className="mobile_whatsapp_container" >
   
   <div className ="mobile_whatsapp_cta">
-  AGENDE SEU VÔO HOJE E SINTA O PRAZER DE VOAR ENTRE AS NUVENS!
+  AGENDE SEU VÔO
   </div>  
     <WhatsAppIcon style={{ fontSize: 30 }}/> 
    
